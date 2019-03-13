@@ -4,6 +4,5 @@
 [debug] 	(/home/wdd/SdevCA1/conf/logback.xml,/home/wdd/SdevCA1/target/scala-2.11/classes/logback.xml)
 [debug] 	(/home/wdd/SdevCA1/conf/routes,/home/wdd/SdevCA1/target/scala-2.11/classes/routes)
 [debug] 	(/home/wdd/SdevCA1/conf/evolutions/default,/home/wdd/SdevCA1/target/scala-2.11/classes/evolutions/default)
-[debug] 	(/home/wdd/SdevCA1/conf/evolutions/default/sql1,/home/wdd/SdevCA1/target/scala-2.11/classes/evolutions/default/sql1)
+[debug] 	(/home/wdd/SdevCA1/conf/evolutions/default/2.sql,/home/wdd/SdevCA1/target/scala-2.11/classes/evolutions/default/2.sql)
 [debug] 	(/home/wdd/SdevCA1/conf/evolutions/default/1.sql,/home/wdd/SdevCA1/target/scala-2.11/classes/evolutions/default/1.sql)
-[debug] 	(/home/wdd/SdevCA1/conf/evolutions/default/sql2,/home/wdd/SdevCA1/target/scala-2.11/classes/evolutions/default/sql2)

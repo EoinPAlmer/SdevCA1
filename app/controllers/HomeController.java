@@ -93,7 +93,7 @@ public class HomeController extends Controller {
         String saveImageMsg = saveFile(p.getId(),image);
 
 
-        flash("success", "Product " + p.getName() + " has been created/updated" + saveImageMsg);
+        flash("success", "Product " + p.getName() + " has been created/updated " + saveImageMsg);
 
         return redirect(controllers.routes.HomeController.products(0));
     }

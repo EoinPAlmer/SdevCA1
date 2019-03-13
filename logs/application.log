@@ -1,6 +1,1296 @@
-2019-03-13 14:41:15,636 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2019-03-13 14:41:16,375 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2019-03-13 14:41:17,836 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2019-03-13T14:41:17.835Z
-2019-03-13 14:41:18,555 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2019-03-13 14:54:55,161 [INFO] from application in pool-4-thread-1 - ApplicationTimer demo: Stopping application at 2019-03-13T14:54:55.161Z after 818s.
-2019-03-13 14:54:55,231 [INFO] from application in pool-4-thread-1 - Shutting down connection pool.
+2019-03-13 15:48:54,482 [INFO] from application in ForkJoinPool-3-worker-1 - Creating Pool for datasource 'default'
+2019-03-13 15:48:54,607 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-3-worker-1 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 15:48:55,845 [INFO] from application in ForkJoinPool-3-worker-1 - ApplicationTimer demo: Starting application at 2019-03-13T15:48:55.844Z
+2019-03-13 15:48:56,973 [INFO] from play.api.Play in ForkJoinPool-3-worker-1 - Application started (Dev)
+2019-03-13 15:48:58,107 [INFO] from application in application-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Stopping application at 2019-03-13T15:48:58.106Z after 3s.
+2019-03-13 15:48:58,114 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2019-03-13 15:48:58,356 [INFO] from application in application-akka.actor.default-dispatcher-9 - Creating Pool for datasource 'default'
+2019-03-13 15:48:58,363 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-9 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 15:48:58,436 [INFO] from application in application-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Starting application at 2019-03-13T15:48:58.436Z
+2019-03-13 15:48:58,538 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2019-03-13 15:49:20,916 [DEBUG] from application in application-akka.actor.default-dispatcher-11 - id: user@sneakersan.com
+2019-03-13 15:56:58,589 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2019-03-13T15:56:58.589Z after 480s.
+2019-03-13 15:56:58,590 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2019-03-13 15:56:58,784 [INFO] from application in application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
+2019-03-13 15:56:58,796 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 15:56:58,844 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Starting application at 2019-03-13T15:56:58.843Z
+2019-03-13 15:56:58,957 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2019-03-13 15:57:11,453 [DEBUG] from application in application-akka.actor.default-dispatcher-9 - id: user@sneakersan.com
+2019-03-13 16:00:34,029 [INFO] from application in application-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Stopping application at 2019-03-13T16:00:34.029Z after 216s.
+2019-03-13 16:00:34,029 [INFO] from application in application-akka.actor.default-dispatcher-10 - Shutting down connection pool.
+2019-03-13 16:00:34,349 [INFO] from application in application-akka.actor.default-dispatcher-10 - Creating Pool for datasource 'default'
+2019-03-13 16:00:34,371 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-10 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 16:00:34,418 [INFO] from application in application-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Starting application at 2019-03-13T16:00:34.418Z
+2019-03-13 16:00:34,675 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-10 - Application started (Dev)
+2019-03-13 16:00:34,719 [DEBUG] from application in application-akka.actor.default-dispatcher-9 - id: user@sneakersan.com
+2019-03-13 16:00:42,639 [ERROR] from application in netty-event-loop-3 - 
+
+! @7b7g22p3a - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[class AuthAdmin is public, should be declared in a file named AuthAdmin.java]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 16:01:27,812 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2019-03-13T16:01:27.812Z after 53s.
+2019-03-13 16:01:27,815 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
+2019-03-13 16:01:27,940 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2019-03-13 16:01:27,949 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 16:01:28,018 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Starting application at 2019-03-13T16:01:28.018Z
+2019-03-13 16:01:28,117 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2019-03-13 16:11:08,308 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - id: user@sneakersan.com
+2019-03-13 16:11:13,988 [DEBUG] from application in application-akka.actor.default-dispatcher-20 - id: user@sneakersan.com
+2019-03-13 16:11:20,263 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - id: user@sneakersan.com
+2019-03-13 16:11:26,066 [DEBUG] from application in application-akka.actor.default-dispatcher-9 - id: user@sneakersan.com
+2019-03-13 16:14:48,692 [DEBUG] from application in application-akka.actor.default-dispatcher-15 - id: user@sneakersan.com
+2019-03-13 16:15:05,830 [DEBUG] from application in application-akka.actor.default-dispatcher-31 - id: user@sneakersan.com
+2019-03-13 16:18:09,105 [ERROR] from application in netty-event-loop-3 - 
+
+! @7b7g4ad94 - Internal server error, for (GET) [/products] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[cannot find symbol
+  symbol:   class session
+  location: class play.mvc.Http]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 16:19:05,404 [ERROR] from application in netty-event-loop-3 - 
+
+! @7b7g4digc - Internal server error, for (GET) [/products] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[controllers.AuthCustomer is not abstract and does not override abstract method call(play.mvc.Http.Context) in play.mvc.Action]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 16:19:52,795 [ERROR] from application in netty-event-loop-3 - 
+
+! @7b7g4gaj6 - Internal server error, for (GET) [/products] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[controllers.AuthCustomer is not abstract and does not override abstract method call(play.mvc.Http.Context) in play.mvc.Action]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 16:20:24,735 [ERROR] from application in netty-event-loop-3 - 
+
+! @7b7g4i5ph - Internal server error, for (GET) [/products] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[cannot find symbol
+  symbol:   class context
+  location: class play.mvc.Http]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 16:20:44,559 [INFO] from application in application-akka.actor.default-dispatcher-29 - ApplicationTimer demo: Stopping application at 2019-03-13T16:20:44.559Z after 1156s.
+2019-03-13 16:20:44,563 [INFO] from application in application-akka.actor.default-dispatcher-29 - Shutting down connection pool.
+2019-03-13 16:20:44,711 [INFO] from application in application-akka.actor.default-dispatcher-29 - Creating Pool for datasource 'default'
+2019-03-13 16:20:44,719 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-29 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 16:20:44,793 [INFO] from application in application-akka.actor.default-dispatcher-29 - ApplicationTimer demo: Starting application at 2019-03-13T16:20:44.793Z
+2019-03-13 16:20:44,889 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-29 - Application started (Dev)
+2019-03-13 16:20:52,593 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - id: user@sneakersan.com
+2019-03-13 16:21:06,743 [DEBUG] from application in application-akka.actor.default-dispatcher-7 - id: user@sneakersan.com
+2019-03-13 16:22:11,518 [DEBUG] from application in application-akka.actor.default-dispatcher-18 - id: eoin@sneakersan.com
+2019-03-13 16:26:59,530 [DEBUG] from application in application-akka.actor.default-dispatcher-22 - id: eoin@sneakersan.com
+2019-03-13 16:28:46,903 [DEBUG] from application in application-akka.actor.default-dispatcher-35 - id: eoin@sneakersan.com
+2019-03-13 16:29:36,147 [DEBUG] from application in application-akka.actor.default-dispatcher-33 - id: eoin@sneakersan.com
+2019-03-13 16:35:59,918 [DEBUG] from application in application-akka.actor.default-dispatcher-40 - id: eoin@sneakersan.com
+2019-03-13 16:38:22,498 [DEBUG] from application in application-akka.actor.default-dispatcher-50 - id: eoin@sneakersan.com
+2019-03-13 16:41:23,407 [DEBUG] from application in application-akka.actor.default-dispatcher-57 - id: eoin@sneakersan.com
+2019-03-13 16:42:03,639 [DEBUG] from application in application-akka.actor.default-dispatcher-58 - id: eoin@sneakersan.com
+2019-03-13 16:42:40,149 [DEBUG] from application in application-akka.actor.default-dispatcher-60 - id: eoin@sneakersan.com
+2019-03-13 16:43:28,624 [DEBUG] from application in application-akka.actor.default-dispatcher-65 - id: eoin@sneakersan.com
+2019-03-13 16:44:56,064 [DEBUG] from application in application-akka.actor.default-dispatcher-75 - id: eoin@sneakersan.com
+2019-03-13 16:45:03,117 [DEBUG] from application in application-akka.actor.default-dispatcher-77 - id: eoin@sneakersan.com
+2019-03-13 16:45:14,097 [DEBUG] from application in application-akka.actor.default-dispatcher-72 - id: eoin@sneakersan.com
+2019-03-13 16:45:39,008 [DEBUG] from application in application-akka.actor.default-dispatcher-81 - id: eoin@sneakersan.com
+2019-03-13 16:47:40,043 [DEBUG] from application in application-akka.actor.default-dispatcher-78 - id: eoin@sneakersan.com
+2019-03-13 16:53:31,596 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7g9173b - Internal server error, for (GET) [/addProduct] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[invalid method declaration; return type required]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 16:54:27,263 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7g94bcb - Internal server error, for (GET) [/addProduct] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[illegal start of type]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 16:55:10,972 [INFO] from application in application-akka.actor.default-dispatcher-78 - ApplicationTimer demo: Stopping application at 2019-03-13T16:55:10.972Z after 2066s.
+2019-03-13 16:55:10,974 [INFO] from application in application-akka.actor.default-dispatcher-78 - Shutting down connection pool.
+2019-03-13 16:55:11,106 [INFO] from application in application-akka.actor.default-dispatcher-78 - Creating Pool for datasource 'default'
+2019-03-13 16:55:11,146 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-78 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 16:55:11,213 [ERROR] from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in application-akka.actor.default-dispatcher-78 - Error in deployment
+java.lang.IllegalStateException: Checking class models.Customer and found class models.User that has @Entity annotation rather than MappedSuperclass?
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritance(DeployBeanDescriptor.java:992)
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritanceMapping(DeployBeanDescriptor.java:976)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.createDeployBeanInfo(BeanDescriptorManager.java:1088)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentInitial(BeanDescriptorManager.java:573)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:314)
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:134)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:121)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:41)
+	at com.avaje.ebean.EbeanServerFactory.createInternal(EbeanServerFactory.java:108)
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:67)
+	at play.db.ebean.EbeanDynamicEvolutions.lambda$start$3(EbeanDynamicEvolutions.java:49)
+	at java.util.HashMap.forEach(HashMap.java:1289)
+	at play.db.ebean.EbeanDynamicEvolutions.start(EbeanDynamicEvolutions.java:49)
+	at play.db.ebean.EbeanDynamicEvolutions.<init>(EbeanDynamicEvolutions.java:38)
+	at play.db.ebean.EbeanDynamicEvolutions$$FastClassByGuice$$52c94231.newInstance(<generated>)
+	at com.google.inject.internal.cglib.reflect.$FastConstructor.newInstance(FastConstructor.java:40)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:61)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:105)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:205)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:180)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:84)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:181)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:123)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:168)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:164)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:164)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:131)
+	at scala.Option.map(Option.scala:146)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:131)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:129)
+	at scala.util.Success.flatMap(Try.scala:231)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:129)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 16:55:11,265 [ERROR] from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in application-akka.actor.default-dispatcher-78 - Error in deployment
+java.lang.IllegalStateException: Checking class models.Customer and found class models.User that has @Entity annotation rather than MappedSuperclass?
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritance(DeployBeanDescriptor.java:992)
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritanceMapping(DeployBeanDescriptor.java:976)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.createDeployBeanInfo(BeanDescriptorManager.java:1088)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentInitial(BeanDescriptorManager.java:573)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:314)
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:134)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:121)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:41)
+	at com.avaje.ebean.EbeanServerFactory.createInternal(EbeanServerFactory.java:108)
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:67)
+	at play.db.ebean.EbeanDynamicEvolutions.lambda$start$3(EbeanDynamicEvolutions.java:49)
+	at java.util.HashMap.forEach(HashMap.java:1289)
+	at play.db.ebean.EbeanDynamicEvolutions.start(EbeanDynamicEvolutions.java:49)
+	at play.db.ebean.EbeanDynamicEvolutions.<init>(EbeanDynamicEvolutions.java:38)
+	at play.db.ebean.EbeanDynamicEvolutions$$FastClassByGuice$$52c94231.newInstance(<generated>)
+	at com.google.inject.internal.cglib.reflect.$FastConstructor.newInstance(FastConstructor.java:40)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:61)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:105)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:405)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:400)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get$lzycompute(EvolutionsModule.scala:53)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:53)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:44)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:205)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:180)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:84)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:181)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:123)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:168)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:164)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:164)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:131)
+	at scala.Option.map(Option.scala:146)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:131)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:129)
+	at scala.util.Success.flatMap(Try.scala:231)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:129)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 16:55:11,269 [INFO] from application in application-akka.actor.default-dispatcher-78 - ApplicationTimer demo: Starting application at 2019-03-13T16:55:11.269Z
+2019-03-13 16:55:11,358 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7g96oi9 - Internal server error, for (GET) [/addProduct] ->
+ 
+play.api.UnexpectedException: Unexpected exception[CreationException: Unable to create injector, see the following errors:
+
+1) Error injecting constructor, java.lang.IllegalStateException: Checking class models.Customer and found class models.User that has @Entity annotation rather than MappedSuperclass?
+  at play.db.ebean.EbeanDynamicEvolutions.<init>(EbeanDynamicEvolutions.java:35)
+  at play.db.ebean.EbeanDynamicEvolutions.class(EbeanDynamicEvolutions.java:32)
+  while locating play.db.ebean.EbeanDynamicEvolutions
+  at play.db.ebean.EbeanModule.bindings(EbeanModule.java:21):
+Binding(class play.api.db.evolutions.DynamicEvolutions to ConstructionTarget(class play.db.ebean.EbeanDynamicEvolutions) eagerly) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$1)
+  while locating play.api.db.evolutions.DynamicEvolutions
+Caused by: java.lang.IllegalStateException: Checking class models.Customer and found class models.User that has @Entity annotation rather than MappedSuperclass?
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritance(DeployBeanDescriptor.java:992)
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritanceMapping(DeployBeanDescriptor.java:976)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.createDeployBeanInfo(BeanDescriptorManager.java:1088)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentInitial(BeanDescriptorManager.java:573)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:314)
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:134)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:121)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:41)
+	at com.avaje.ebean.EbeanServerFactory.createInternal(EbeanServerFactory.java:108)
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:67)
+	at play.db.ebean.EbeanDynamicEvolutions.lambda$start$3(EbeanDynamicEvolutions.java:49)
+	at java.util.HashMap.forEach(HashMap.java:1289)
+	at play.db.ebean.EbeanDynamicEvolutions.start(EbeanDynamicEvolutions.java:49)
+	at play.db.ebean.EbeanDynamicEvolutions.<init>(EbeanDynamicEvolutions.java:38)
+	at play.db.ebean.EbeanDynamicEvolutions$$FastClassByGuice$$52c94231.newInstance(<generated>)
+	at com.google.inject.internal.cglib.reflect.$FastConstructor.newInstance(FastConstructor.java:40)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:61)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:105)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:205)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:180)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:84)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:181)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:123)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:168)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:164)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:164)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:131)
+	at scala.Option.map(Option.scala:146)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:131)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:129)
+	at scala.util.Success.flatMap(Try.scala:231)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:129)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+2) Error injecting constructor, java.lang.IllegalStateException: Checking class models.Customer and found class models.User that has @Entity annotation rather than MappedSuperclass?
+  at play.db.ebean.EbeanDynamicEvolutions.<init>(EbeanDynamicEvolutions.java:35)
+  at play.db.ebean.EbeanDynamicEvolutions.class(EbeanDynamicEvolutions.java:32)
+  while locating play.db.ebean.EbeanDynamicEvolutions
+  at play.db.ebean.EbeanModule.bindings(EbeanModule.java:21):
+Binding(class play.api.db.evolutions.DynamicEvolutions to ConstructionTarget(class play.db.ebean.EbeanDynamicEvolutions) eagerly) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$1)
+  while locating play.api.db.evolutions.DynamicEvolutions
+  while locating play.api.db.evolutions.ApplicationEvolutionsProvider
+  at play.api.db.evolutions.EvolutionsModule.bindings(EvolutionsModule.scala:22):
+Binding(class play.api.db.evolutions.ApplicationEvolutions to ProviderConstructionTarget(class play.api.db.evolutions.ApplicationEvolutionsProvider) eagerly) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$1)
+  while locating play.api.db.evolutions.ApplicationEvolutions
+Caused by: java.lang.IllegalStateException: Checking class models.Customer and found class models.User that has @Entity annotation rather than MappedSuperclass?
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritance(DeployBeanDescriptor.java:992)
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritanceMapping(DeployBeanDescriptor.java:976)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.createDeployBeanInfo(BeanDescriptorManager.java:1088)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentInitial(BeanDescriptorManager.java:573)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:314)
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:134)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:121)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:41)
+	at com.avaje.ebean.EbeanServerFactory.createInternal(EbeanServerFactory.java:108)
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:67)
+	at play.db.ebean.EbeanDynamicEvolutions.lambda$start$3(EbeanDynamicEvolutions.java:49)
+	at java.util.HashMap.forEach(HashMap.java:1289)
+	at play.db.ebean.EbeanDynamicEvolutions.start(EbeanDynamicEvolutions.java:49)
+	at play.db.ebean.EbeanDynamicEvolutions.<init>(EbeanDynamicEvolutions.java:38)
+	at play.db.ebean.EbeanDynamicEvolutions$$FastClassByGuice$$52c94231.newInstance(<generated>)
+	at com.google.inject.internal.cglib.reflect.$FastConstructor.newInstance(FastConstructor.java:40)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:61)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:105)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:405)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:400)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get$lzycompute(EvolutionsModule.scala:53)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:53)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:44)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:205)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:180)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:84)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:181)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:123)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:168)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:164)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:164)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:131)
+	at scala.Option.map(Option.scala:146)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:131)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:129)
+	at scala.util.Success.flatMap(Try.scala:231)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:129)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+2 errors]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:180)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:131)
+	at scala.Option.map(Option.scala:146)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:131)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:129)
+	at scala.util.Success.flatMap(Try.scala:231)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:129)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) Error injecting constructor, java.lang.IllegalStateException: Checking class models.Customer and found class models.User that has @Entity annotation rather than MappedSuperclass?
+  at play.db.ebean.EbeanDynamicEvolutions.<init>(EbeanDynamicEvolutions.java:35)
+  at play.db.ebean.EbeanDynamicEvolutions.class(EbeanDynamicEvolutions.java:32)
+  while locating play.db.ebean.EbeanDynamicEvolutions
+  at play.db.ebean.EbeanModule.bindings(EbeanModule.java:21):
+Binding(class play.api.db.evolutions.DynamicEvolutions to ConstructionTarget(class play.db.ebean.EbeanDynamicEvolutions) eagerly) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$1)
+  while locating play.api.db.evolutions.DynamicEvolutions
+Caused by: java.lang.IllegalStateException: Checking class models.Customer and found class models.User that has @Entity annotation rather than MappedSuperclass?
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritance(DeployBeanDescriptor.java:992)
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritanceMapping(DeployBeanDescriptor.java:976)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.createDeployBeanInfo(BeanDescriptorManager.java:1088)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentInitial(BeanDescriptorManager.java:573)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:314)
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:134)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:121)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:41)
+	at com.avaje.ebean.EbeanServerFactory.createInternal(EbeanServerFactory.java:108)
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:67)
+	at play.db.ebean.EbeanDynamicEvolutions.lambda$start$3(EbeanDynamicEvolutions.java:49)
+	at java.util.HashMap.forEach(HashMap.java:1289)
+	at play.db.ebean.EbeanDynamicEvolutions.start(EbeanDynamicEvolutions.java:49)
+	at play.db.ebean.EbeanDynamicEvolutions.<init>(EbeanDynamicEvolutions.java:38)
+	at play.db.ebean.EbeanDynamicEvolutions$$FastClassByGuice$$52c94231.newInstance(<generated>)
+	at com.google.inject.internal.cglib.reflect.$FastConstructor.newInstance(FastConstructor.java:40)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:61)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:105)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:205)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:180)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:84)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:181)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:123)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:168)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:164)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:164)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:131)
+	at scala.Option.map(Option.scala:146)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:131)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:129)
+	at scala.util.Success.flatMap(Try.scala:231)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:129)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+2) Error injecting constructor, java.lang.IllegalStateException: Checking class models.Customer and found class models.User that has @Entity annotation rather than MappedSuperclass?
+  at play.db.ebean.EbeanDynamicEvolutions.<init>(EbeanDynamicEvolutions.java:35)
+  at play.db.ebean.EbeanDynamicEvolutions.class(EbeanDynamicEvolutions.java:32)
+  while locating play.db.ebean.EbeanDynamicEvolutions
+  at play.db.ebean.EbeanModule.bindings(EbeanModule.java:21):
+Binding(class play.api.db.evolutions.DynamicEvolutions to ConstructionTarget(class play.db.ebean.EbeanDynamicEvolutions) eagerly) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$1)
+  while locating play.api.db.evolutions.DynamicEvolutions
+  while locating play.api.db.evolutions.ApplicationEvolutionsProvider
+  at play.api.db.evolutions.EvolutionsModule.bindings(EvolutionsModule.scala:22):
+Binding(class play.api.db.evolutions.ApplicationEvolutions to ProviderConstructionTarget(class play.api.db.evolutions.ApplicationEvolutionsProvider) eagerly) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$1)
+  while locating play.api.db.evolutions.ApplicationEvolutions
+Caused by: java.lang.IllegalStateException: Checking class models.Customer and found class models.User that has @Entity annotation rather than MappedSuperclass?
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritance(DeployBeanDescriptor.java:992)
+	at com.avaje.ebeaninternal.server.deploy.meta.DeployBeanDescriptor.checkInheritanceMapping(DeployBeanDescriptor.java:976)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.createDeployBeanInfo(BeanDescriptorManager.java:1088)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentInitial(BeanDescriptorManager.java:573)
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:314)
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:134)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:121)
+	at com.avaje.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:41)
+	at com.avaje.ebean.EbeanServerFactory.createInternal(EbeanServerFactory.java:108)
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:67)
+	at play.db.ebean.EbeanDynamicEvolutions.lambda$start$3(EbeanDynamicEvolutions.java:49)
+	at java.util.HashMap.forEach(HashMap.java:1289)
+	at play.db.ebean.EbeanDynamicEvolutions.start(EbeanDynamicEvolutions.java:49)
+	at play.db.ebean.EbeanDynamicEvolutions.<init>(EbeanDynamicEvolutions.java:38)
+	at play.db.ebean.EbeanDynamicEvolutions$$FastClassByGuice$$52c94231.newInstance(<generated>)
+	at com.google.inject.internal.cglib.reflect.$FastConstructor.newInstance(FastConstructor.java:40)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:61)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:105)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:405)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:400)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get$lzycompute(EvolutionsModule.scala:53)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:53)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:44)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:205)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:180)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:84)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:181)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:123)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:168)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:164)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:164)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:131)
+	at scala.Option.map(Option.scala:146)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:131)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:129)
+	at scala.util.Success.flatMap(Try.scala:231)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:129)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+2 errors
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:466)
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:184)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:84)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:181)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:123)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:168)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:164)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:164)
+	... 15 common frames omitted
+2019-03-13 16:56:37,767 [INFO] from application in ForkJoinPool-3-worker-0 - ApplicationTimer demo: Stopping application at 2019-03-13T16:56:37.767Z after 86s.
+2019-03-13 16:56:37,768 [INFO] from application in ForkJoinPool-3-worker-0 - Shutting down connection pool.
+2019-03-13 16:56:37,912 [INFO] from application in ForkJoinPool-3-worker-0 - Creating Pool for datasource 'default'
+2019-03-13 16:56:37,922 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-3-worker-0 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 16:56:38,024 [INFO] from application in ForkJoinPool-3-worker-0 - ApplicationTimer demo: Starting application at 2019-03-13T16:56:38.024Z
+2019-03-13 16:56:38,143 [INFO] from play.api.Play in ForkJoinPool-3-worker-0 - Application started (Dev)
+2019-03-13 16:56:38,184 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - id: eoin@sneakersan.com
+2019-03-13 16:56:40,780 [DEBUG] from application in application-akka.actor.default-dispatcher-7 - id: eoin@sneakersan.com
+2019-03-13 16:57:14,380 [DEBUG] from application in application-akka.actor.default-dispatcher-14 - id: user@sneakersan.com
+2019-03-13 16:58:03,329 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7g9gj2f - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[cannot find symbol
+  symbol:   class index
+  location: class play.mvc.Http]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 16:59:39,434 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7g9m570 - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[cannot find symbol
+  symbol:   variable role
+  location: class controllers.AuthCustomer]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 17:00:01,538 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7g9nbp4 - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[cannot find symbol
+  symbol:   variable Admin
+  location: class controllers.AuthCustomer]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 17:00:53,414 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7ga0aia - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[cannot find symbol
+  symbol:   variable Admin
+  location: class controllers.AuthCustomer]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 17:01:05,336 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7ga128n - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[cannot find symbol
+  symbol:   variable admin
+  location: class controllers.AuthCustomer]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 17:01:44,413 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7ga383n - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[cannot find symbol
+  symbol:   variable admin
+  location: class controllers.AuthCustomer]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 17:02:36,847 [INFO] from application in application-akka.actor.default-dispatcher-13 - ApplicationTimer demo: Stopping application at 2019-03-13T17:02:36.847Z after 358s.
+2019-03-13 17:02:36,848 [INFO] from application in application-akka.actor.default-dispatcher-13 - Shutting down connection pool.
+2019-03-13 17:02:36,977 [INFO] from application in application-akka.actor.default-dispatcher-13 - Creating Pool for datasource 'default'
+2019-03-13 17:02:36,993 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-13 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 17:02:37,084 [INFO] from application in application-akka.actor.default-dispatcher-13 - ApplicationTimer demo: Starting application at 2019-03-13T17:02:37.084Z
+2019-03-13 17:02:37,088 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7ga681i - Internal server error, for (GET) [/] ->
+ 
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$play$api$db$evolutions$ApplicationEvolutions$$runEvolutions$1.apply$mcV$sp(ApplicationEvolutions.scala:77)
+	at play.api.db.evolutions.ApplicationEvolutions.withLock(ApplicationEvolutions.scala:99)
+	at play.api.db.evolutions.ApplicationEvolutions.play$api$db$evolutions$ApplicationEvolutions$$runEvolutions(ApplicationEvolutions.scala:49)
+	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$start$1.apply(ApplicationEvolutions.scala:42)
+	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$start$1.apply(ApplicationEvolutions.scala:42)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at play.api.db.evolutions.ApplicationEvolutions.start(ApplicationEvolutions.scala:42)
+	at play.api.db.evolutions.ApplicationEvolutions.<init>(ApplicationEvolutions.scala:150)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get$lzycompute(EvolutionsModule.scala:53)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:53)
+	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:44)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:205)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:180)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:84)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:181)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:123)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:168)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:164)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:164)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:131)
+	at scala.Option.map(Option.scala:146)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:131)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:129)
+	at scala.util.Success.flatMap(Try.scala:231)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:129)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 17:02:39,868 [ERROR] from play.api.db.evolutions.DefaultEvolutionsApi in netty-event-loop-4 - Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.CATEGORY(ID)"; SQL statement:
+insert into category(id,name) values(1,'Adidas') [23505-192] [ERROR:23505, SQLSTATE:23505]
+2019-03-13 17:02:39,869 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7ga6c4m - Internal server error, for (GET) [/@evolutions/apply/default?redirect=http%3A%2F%2Flocalhost%3A9000%2F] ->
+ 
+play.api.db.evolutions.InconsistentDatabase: Database 'default' is in an inconsistent state![An evolution has not been applied properly. Please check the problem and resolve it manually before marking it as resolved.]
+	at play.api.db.evolutions.DatabaseEvolutions.checkEvolutionsState(EvolutionsApi.scala:276)
+	at play.api.db.evolutions.DatabaseEvolutions.evolve(EvolutionsApi.scala:231)
+	at play.api.db.evolutions.DefaultEvolutionsApi.evolve(EvolutionsApi.scala:86)
+	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:361)
+	at play.core.DefaultWebCommands$$anonfun$handleWebCommand$1.apply(WebCommands.scala:40)
+	at play.core.DefaultWebCommands$$anonfun$handleWebCommand$1.apply(WebCommands.scala:40)
+	at scala.collection.immutable.Stream.flatMap(Stream.scala:489)
+	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:40)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1$$anonfun$apply$7.apply(DevServerStart.scala:203)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1$$anonfun$apply$7.apply(DevServerStart.scala:203)
+	at scala.Option.flatMap(Option.scala:171)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1.apply(DevServerStart.scala:203)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1.apply(DevServerStart.scala:203)
+	at scala.Option.orElse(Option.scala:289)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1.handleWebCommand(DevServerStart.scala:202)
+	at play.core.server.Server$class.getHandlerFor(Server.scala:49)
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:47)
+	at play.core.server.netty.PlayRequestHandler.handle(PlayRequestHandler.scala:82)
+	at play.core.server.netty.PlayRequestHandler.channelRead(PlayRequestHandler.scala:163)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at com.typesafe.netty.http.HttpStreamsHandler.channelRead(HttpStreamsHandler.java:129)
+	at com.typesafe.netty.http.HttpStreamsServerHandler.channelRead(HttpStreamsServerHandler.java:96)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-13 17:02:43,781 [INFO] from application in ForkJoinPool-3-worker-1 - ApplicationTimer demo: Stopping application at 2019-03-13T17:02:43.781Z after 6s.
+2019-03-13 17:02:43,783 [INFO] from application in ForkJoinPool-3-worker-1 - Shutting down connection pool.
+2019-03-13 17:02:43,964 [INFO] from application in ForkJoinPool-3-worker-1 - Creating Pool for datasource 'default'
+2019-03-13 17:02:43,969 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-3-worker-1 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 17:02:44,051 [INFO] from application in ForkJoinPool-3-worker-1 - ApplicationTimer demo: Starting application at 2019-03-13T17:02:44.051Z
+2019-03-13 17:02:44,127 [INFO] from play.api.Play in ForkJoinPool-3-worker-1 - Application started (Dev)
+2019-03-13 17:02:46,913 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - id: user@sneakersan.com
+2019-03-13 17:03:02,592 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - id: user@sneakersan.com
+2019-03-13 17:03:04,134 [DEBUG] from application in application-akka.actor.default-dispatcher-9 - id: user@sneakersan.com
+2019-03-13 17:03:08,335 [DEBUG] from application in application-akka.actor.default-dispatcher-13 - id: user@sneakersan.com
+2019-03-13 17:03:55,903 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7gaakh4 - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value admin]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 17:04:30,749 [INFO] from application in application-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Stopping application at 2019-03-13T17:04:30.749Z after 106s.
+2019-03-13 17:04:30,749 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
+2019-03-13 17:04:30,850 [INFO] from application in application-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2019-03-13 17:04:30,864 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-7 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 17:04:30,906 [INFO] from application in application-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Starting application at 2019-03-13T17:04:30.906Z
+2019-03-13 17:04:30,984 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2019-03-13 17:04:33,630 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - id: user@sneakersan.com
+2019-03-13 17:05:42,643 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7gagmef - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[illegal start of simple expression]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 17:06:13,267 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2019-03-13T17:06:13.266Z after 103s.
+2019-03-13 17:06:13,267 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2019-03-13 17:06:13,372 [INFO] from application in application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
+2019-03-13 17:06:13,383 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 17:06:13,431 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Starting application at 2019-03-13T17:06:13.431Z
+2019-03-13 17:06:13,531 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2019-03-13 17:06:15,807 [DEBUG] from application in application-akka.actor.default-dispatcher-9 - id: user@sneakersan.com
+2019-03-13 17:06:35,209 [ERROR] from application in netty-event-loop-4 - 
+
+! @7b7gajm8a - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value role]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-03-13 17:07:20,181 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Stopping application at 2019-03-13T17:07:20.181Z after 67s.
+2019-03-13 17:07:20,183 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2019-03-13 17:07:20,261 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
+2019-03-13 17:07:20,264 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 17:07:20,351 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Starting application at 2019-03-13T17:07:20.351Z
+2019-03-13 17:07:20,518 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2019-03-13 17:07:22,881 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - id: user@sneakersan.com
+2019-03-13 17:07:27,505 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - id: user@sneakersan.com
+2019-03-13 17:10:37,021 [INFO] from application in application-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Stopping application at 2019-03-13T17:10:37.021Z after 197s.
+2019-03-13 17:10:37,022 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2019-03-13 17:10:37,112 [INFO] from application in application-akka.actor.default-dispatcher-9 - Creating Pool for datasource 'default'
+2019-03-13 17:10:37,117 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-9 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-13 17:10:37,163 [INFO] from application in application-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Starting application at 2019-03-13T17:10:37.163Z
+2019-03-13 17:10:37,242 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2019-03-13 17:10:40,978 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - id: user@sneakersan.com
+2019-03-13 17:19:58,534 [INFO] from application in pool-48-thread-1 - ApplicationTimer demo: Stopping application at 2019-03-13T17:19:58.534Z after 561s.
+2019-03-13 17:19:58,536 [INFO] from application in pool-48-thread-1 - Shutting down connection pool.

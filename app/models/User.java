@@ -40,7 +40,6 @@ public class User extends Model {
     public void setEmail(String email) {
         this.email = email;
     }
-
     public String getRole() {
         return role;
     }
