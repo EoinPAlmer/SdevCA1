@@ -21,7 +21,7 @@
 
 #navbarlogo{
 	font-size: 2.5em;
-	font-family: Pacifico;
+	font-family: Times New Roman;
 }
 
 .navbar{
@@ -32,7 +32,7 @@
 
 .navbar a{
 	color: white;
-	font-family: Pacifico;
+	font-family: Times New Roman;
 }
 
 .icon-bar:focus, icon-bar:hover, .icon-bar {

@@ -34,45 +34,8 @@ class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Forma
 
 Seq[Any](format.raw/*2.21*/("""
 """),_display_(/*3.2*/main("home",user)/*3.19*/{_display_(Seq[Any](format.raw/*3.20*/("""
-    """),format.raw/*4.5*/("""<div id="mycarousel" class="carousel slide" data-ride="carousel">
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src=""""),_display_(/*8.28*/routes/*8.34*/.Assets.versioned("images/offwhite-j1.jpg")),format.raw/*8.77*/("""" alt="First Image">
-                <div class="carousel-caption">
-                    <a href=""""),_display_(/*10.31*/routes/*10.37*/.HomeController.products()),format.raw/*10.63*/("""">
-                    </a>
-                </div>
-            </div>
-            <!--end of carousel caption-->
-            <div class="item">
-                <img src=""""),_display_(/*16.28*/routes/*16.34*/.Assets.versioned("images/offwhite-vapormax1.jpg")),format.raw/*16.84*/("""" alt="Second Image">
-                <div class="carousel-caption">
-                    <a href=""""),_display_(/*18.31*/routes/*18.37*/.HomeController.products()),format.raw/*18.63*/("""">
-                    </a>
-                </div>
-                <!--end of carousel caption-->
-            </div>
-            <div class="item">
-                <img src=""""),_display_(/*24.28*/routes/*24.34*/.Assets.versioned("images/yeezy-v2-beluga2.jpg")),format.raw/*24.82*/("""" alt="Third Image">
-                <div class="carousel-caption">
-                    <a href=""""),_display_(/*26.31*/routes/*26.37*/.HomeController.products()),format.raw/*26.63*/("""">
-                    </a>
-                </div>
-                <!--end of carousel caption-->
-            </div>
-            <div class="item">
-                <img src=""""),_display_(/*32.28*/routes/*32.34*/.Assets.versioned("images/balenciaga.jpg")),format.raw/*32.76*/("""" alt="Forth Image">
-                <div class="carousel-caption">
-                    <a href=""""),_display_(/*34.31*/routes/*34.37*/.HomeController.products()),format.raw/*34.63*/("""">
-                    </a>
-                </div>
-                <!--end of carousel caption-->
-            </div>
-        </div>
-        <!--end of carousel inner-->
-        <!-- Controls -->
-        <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+
+        """),format.raw/*5.9*/("""<a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
@@ -91,7 +54,7 @@ Seq[Any](format.raw/*2.21*/("""
                 <p class="text-muted"> From Yeeƶys to Nike, adidas, Balenciaga and more, we have it all.</p>
             </div>
             <div class="col-md-6">
-                <img src=""""),_display_(/*61.28*/routes/*61.34*/.Assets.versioned("images/yeezy350.jpg")),format.raw/*61.74*/("""" class="img-responsive">
+                <img src=""""),_display_(/*24.28*/routes/*24.34*/.Assets.versioned("images/SDevProHome.png")),format.raw/*24.77*/("""" class="img-responsive">
             </div>
         </div>
     </div>
@@ -144,11 +107,11 @@ Seq[Any](format.raw/*2.21*/("""
 object index extends index_Scope0.index_Scope1.index
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 28 14:05:49 GMT 2019
-                  SOURCE: /home/wdd/2ndYearProject/app/views/index.scala.html
-                  HASH: e9e319e6725fe9f7a94d0665909a6beeb30e2979
-                  MATRIX: 812->36|926->55|953->57|978->74|1016->75|1047->80|1292->299|1306->305|1369->348|1494->446|1509->452|1556->478|1754->649|1769->655|1840->705|1966->804|1981->810|2028->836|2230->1011|2245->1017|2314->1065|2439->1163|2454->1169|2501->1195|2703->1370|2718->1376|2781->1418|2906->1516|2921->1522|2968->1548|4478->3031|4493->3037|4554->3077
-                  LINES: 30->2|35->2|36->3|36->3|36->3|37->4|41->8|41->8|41->8|43->10|43->10|43->10|49->16|49->16|49->16|51->18|51->18|51->18|57->24|57->24|57->24|59->26|59->26|59->26|65->32|65->32|65->32|67->34|67->34|67->34|94->61|94->61|94->61
+                  DATE: Thu Mar 14 15:00:14 GMT 2019
+                  SOURCE: /home/wdd/SdevCA1/app/views/index.scala.html
+                  HASH: 974aeefe9b9156e23fe6ea9c33bc5f3e44bc4821
+                  MATRIX: 812->36|926->55|953->57|978->74|1016->75|1052->85|2359->1365|2374->1371|2438->1414
+                  LINES: 30->2|35->2|36->3|36->3|36->3|38->5|57->24|57->24|57->24
                   -- GENERATED --
               */
           

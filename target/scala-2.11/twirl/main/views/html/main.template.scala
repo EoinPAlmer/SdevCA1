@@ -32,7 +32,7 @@ import javax.swing.text.html.HTML
 Seq[Any](format.raw/*1.51*/("""
 """),format.raw/*3.1*/("""<html>
     <head>
-        <title>Sneaker Sanctuary</title>
+        <title>IT Project Management</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <!-- Latest compiled and minified CSS -->
@@ -59,7 +59,7 @@ Seq[Any](format.raw/*1.51*/("""
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href=""""),_display_(/*32.52*/routes/*32.58*/.HomeController.index()),format.raw/*32.81*/("""" id="navbarlogo">Sneaker Sanctuary &trade;</a>
+                    <a class="navbar-brand" href=""""),_display_(/*32.52*/routes/*32.58*/.HomeController.index()),format.raw/*32.81*/("""" id="navbarlogo">IT Project Management &trade;</a>
                 </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -67,12 +67,12 @@ Seq[Any](format.raw/*1.51*/("""
                         <li """),_display_(/*37.30*/if(title == "home")/*37.49*/ {_display_(Seq[Any](format.raw/*37.51*/("""
                             """),format.raw/*38.29*/("""class="active"""")))}),format.raw/*38.44*/("""><a href=""""),_display_(/*38.55*/routes/*38.61*/.HomeController.index()),format.raw/*38.84*/("""">Home</a></li>
                         <li """),_display_(/*39.30*/if(title == "products")/*39.53*/ {_display_(Seq[Any](format.raw/*39.55*/("""
-                            """),format.raw/*40.29*/("""class="active"""")))}),format.raw/*40.44*/("""><a href=""""),_display_(/*40.55*/routes/*40.61*/.HomeController.products()),format.raw/*40.87*/("""">Products</a></li>
-                        """),_display_(/*41.26*/if(user != null)/*41.42*/ {_display_(Seq[Any](format.raw/*41.44*/("""
-                            """),format.raw/*42.29*/("""<li """),_display_(/*42.34*/if(title == "Add Product")/*42.60*/ {_display_(Seq[Any](format.raw/*42.62*/("""class = "active"""")))}),format.raw/*42.79*/(""">
-                            <a href=""""),_display_(/*43.39*/routes/*43.45*/.HomeController.addProduct()),format.raw/*43.73*/("""">Add A Product</a>
-                            </li>
-                        """)))}),format.raw/*45.26*/("""
+                            """),format.raw/*40.29*/("""class="active"""")))}),format.raw/*40.44*/("""><a href=""""),_display_(/*40.55*/routes/*40.61*/.HomeController.products()),format.raw/*40.87*/("""">Projects</a></li>
+                            """),_display_(/*41.30*/if(user != null)/*41.46*/ {_display_(Seq[Any](format.raw/*41.48*/("""
+                                """),format.raw/*42.33*/("""<li """),_display_(/*42.38*/if(title == "Add Product")/*42.64*/ {_display_(Seq[Any](format.raw/*42.66*/("""class = "active"""")))}),format.raw/*42.83*/(""">
+                                <a href=""""),_display_(/*43.43*/routes/*43.49*/.HomeController.addProduct()),format.raw/*43.77*/("""">Add A Project</a>
+                                </li>
+                            """)))}),format.raw/*45.30*/("""
                         """),format.raw/*46.25*/("""<li """),_display_(/*46.30*/if(title == "login")/*46.50*/{_display_(Seq[Any](format.raw/*46.51*/("""class = "active"""")))}),format.raw/*46.68*/(""">
                         """),_display_(/*47.26*/if(user == null)/*47.42*/ {_display_(Seq[Any](format.raw/*47.44*/("""
                             """),format.raw/*48.29*/("""<a href=""""),_display_(/*48.39*/routes/*48.45*/.LoginController.login()),format.raw/*48.69*/("""">Login</a>
@@ -91,10 +91,10 @@ Seq[Any](format.raw/*1.51*/("""
             <div class="container">
                 <div class="row footerinfo">
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <h4 contenteditable="true">COPYRIGHT © 2019 Sneaker Sanctuary</h4>
+                        <h4 contenteditable="true">COPYRIGHT © 2019 IT Porject Management</h4>
                         <p>Eoin Palmer - X00136028
                         <br>Paul Roche - X00140500
-                        <br>Finn Harvey - X00127705 </p>
+                        </p>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse pull-right"></i></a>
@@ -146,10 +146,10 @@ Seq[Any](format.raw/*1.51*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Wed Mar 13 17:10:33 GMT 2019
+                  DATE: Thu Mar 14 15:07:05 GMT 2019
                   SOURCE: /home/wdd/SdevCA1/app/views/main.scala.html
-                  HASH: a130da9005fe206d3cb788f63f369034e98a83cb
-                  MATRIX: 760->1|937->50|964->86|2245->1340|2260->1346|2329->1393|3145->2182|3160->2188|3204->2211|3571->2551|3599->2570|3639->2572|3696->2601|3742->2616|3780->2627|3795->2633|3839->2656|3911->2701|3943->2724|3983->2726|4040->2755|4086->2770|4124->2781|4139->2787|4186->2813|4258->2858|4283->2874|4323->2876|4380->2905|4412->2910|4447->2936|4487->2938|4535->2955|4602->2995|4617->3001|4666->3029|4776->3108|4829->3133|4861->3138|4890->3158|4929->3159|4977->3176|5031->3203|5056->3219|5096->3221|5153->3250|5190->3260|5205->3266|5250->3290|5306->3328|5319->3333|5358->3334|5415->3363|5454->3375|5469->3381|5515->3406|5552->3416|5565->3420|5596->3430|5657->3460|5706->3481|5911->3659|5939->3666|5975->3675|7162->4834|7191->4835|7232->4848|7300->4889|7329->4890|7371->4904|7429->4934|7458->4935|7504->4953|7746->5167|7775->5168|7824->5189|7937->5274|7966->5275|8007->5288|8036->5289
+                  HASH: 482ccdfd1686bcf635e6db1f8901203e69f374ce
+                  MATRIX: 760->1|937->50|964->86|2249->1344|2264->1350|2333->1397|3149->2186|3164->2192|3208->2215|3579->2559|3607->2578|3647->2580|3704->2609|3750->2624|3788->2635|3803->2641|3847->2664|3919->2709|3951->2732|3991->2734|4048->2763|4094->2778|4132->2789|4147->2795|4194->2821|4270->2870|4295->2886|4335->2888|4396->2921|4428->2926|4463->2952|4503->2954|4551->2971|4622->3015|4637->3021|4686->3049|4804->3136|4857->3161|4889->3166|4918->3186|4957->3187|5005->3204|5059->3231|5084->3247|5124->3249|5181->3278|5218->3288|5233->3294|5278->3318|5334->3356|5347->3361|5386->3362|5443->3391|5482->3403|5497->3409|5543->3434|5580->3444|5593->3448|5624->3458|5685->3488|5734->3509|5939->3687|5967->3694|6003->3703|7166->4838|7195->4839|7236->4852|7304->4893|7333->4894|7375->4908|7433->4938|7462->4939|7508->4957|7750->5171|7779->5172|7828->5193|7941->5278|7970->5279|8011->5292|8040->5293
                   LINES: 27->1|32->1|33->3|47->17|47->17|47->17|62->32|62->32|62->32|67->37|67->37|67->37|68->38|68->38|68->38|68->38|68->38|69->39|69->39|69->39|70->40|70->40|70->40|70->40|70->40|71->41|71->41|71->41|72->42|72->42|72->42|72->42|72->42|73->43|73->43|73->43|75->45|76->46|76->46|76->46|76->46|76->46|77->47|77->47|77->47|78->48|78->48|78->48|78->48|79->49|79->49|79->49|80->50|80->50|80->50|80->50|80->50|80->50|80->50|81->51|82->52|89->59|89->59|90->60|112->82|112->82|113->83|114->84|114->84|116->86|116->86|116->86|118->88|122->92|122->92|123->93|124->94|124->94|125->95|125->95
                   -- GENERATED --
               */
