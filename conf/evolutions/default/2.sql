@@ -2,10 +2,10 @@
 
 # --- !Ups
 
-insert into category(id,name) values(1,'Adidas');
-insert into category(id,name) values(2,'Nike');
-insert into category(id,name) values(3,'Balenciaga');
-insert into catagory(id,name) values(4, "Yeezy");
+insert into category(id,name) values(1,'Network Engineer');
+insert into category(id,name) values(2,'Java Developer');
+insert into category(id,name) values(3,'Programmer');
+insert into catagory(id,name) values(4, "App Engineer");
 
 insert into product (id,name,brand,size,stock,category_id,price) values(1, "Yeezy boost 350 Turtle Dove", "Yeezy", 10, 700, 14, 4);
 insert into product (id,name,brand,size,stock,category_id,price) values(2, "Yeezy boost 750 black", "Yeezy", 8, 850, 10, 4);
@@ -16,7 +16,7 @@ insert into product (id,name,brand,size,stock,category_id,price) values(6, "Nike
 insert into product (id,name,brand,size,stock,category_id,price) values(7, "Baleniaga Platform crocs", "Balenciaga", 9, 800, 10, 3);
 insert into product (id,name,brand,size,stock,category_id,price) values(8, "Balenciaga Thriple S", "Balenciaga", 9, 600, 10, 3);
 
-insert into User (email,role,name,password) values ('finn@sneakersan.com','admin','FinnHarvey','password');
-insert into User (email,role,name,password) values ('eoin@sneakersan.com','admin','EoinPalmer','password');
-insert into User (email,role,name,password) values ('paul@sneakersan.com','admin','PaulRoche','password');
-insert into User (email,role,name,password) values ('user@sneakersan.com','user','user','password');
+
+insert into User (email,role,name,password) values ('eoin@IT-Project-Management.com','admin','EoinPalmer','password');
+insert into User (email,role,name,password) values ('paul@IT-Project-Management.com','admin','PaulRoche','password');
+insert into User (email,role,name,password) values ('employee@IT-Project-Management.com','employee','employee','password');

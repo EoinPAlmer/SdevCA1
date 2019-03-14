@@ -35,15 +35,8 @@ class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Forma
 Seq[Any](format.raw/*2.21*/("""
 """),_display_(/*3.2*/main("home",user)/*3.19*/{_display_(Seq[Any](format.raw/*3.20*/("""
 
-        """),format.raw/*5.9*/("""<a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+    
+    """),format.raw/*6.5*/("""</div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -54,7 +47,7 @@ Seq[Any](format.raw/*2.21*/("""
                 <p class="text-muted"> From Yeeƶys to Nike, adidas, Balenciaga and more, we have it all.</p>
             </div>
             <div class="col-md-6">
-                <img src=""""),_display_(/*24.28*/routes/*24.34*/.Assets.versioned("images/SDevProHome.png")),format.raw/*24.77*/("""" class="img-responsive">
+                <img src=""""),_display_(/*17.28*/routes/*17.34*/.Assets.versioned("images/SDevProHome.png")),format.raw/*17.77*/("""" class="img-responsive">
             </div>
         </div>
     </div>
@@ -107,11 +100,11 @@ Seq[Any](format.raw/*2.21*/("""
 object index extends index_Scope0.index_Scope1.index
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 14 15:00:14 GMT 2019
+                  DATE: Thu Mar 14 20:51:44 GMT 2019
                   SOURCE: /home/wdd/SdevCA1/app/views/index.scala.html
-                  HASH: 974aeefe9b9156e23fe6ea9c33bc5f3e44bc4821
-                  MATRIX: 812->36|926->55|953->57|978->74|1016->75|1052->85|2359->1365|2374->1371|2438->1414
-                  LINES: 30->2|35->2|36->3|36->3|36->3|38->5|57->24|57->24|57->24
+                  HASH: 1ac7608c6ab8f05c0a1ea6330952f624ccf999ea
+                  MATRIX: 812->36|926->55|953->57|978->74|1016->75|1053->86|1882->888|1897->894|1961->937
+                  LINES: 30->2|35->2|36->3|36->3|36->3|39->6|50->17|50->17|50->17
                   -- GENERATED --
               */
           

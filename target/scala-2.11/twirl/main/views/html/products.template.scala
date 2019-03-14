@@ -33,71 +33,69 @@ Seq[Any](format.raw/*1.114*/("""
     """),_display_(/*2.6*/main("products", user)/*2.28*/ {_display_(Seq[Any](format.raw/*2.30*/("""
         """),format.raw/*3.9*/("""<div class="container">
 
-            <h2 class = "text-center text-muted"><span class = "logo">Sneaker Sanctuary</span> Products In Stock</h2>
+            """),_display_(/*5.14*/if(flash.containsKey("success"))/*5.46*/ {_display_(Seq[Any](format.raw/*5.48*/("""
+                """),format.raw/*6.17*/("""<div class="alert alert-success">
+                """),_display_(/*7.18*/flash/*7.23*/.get("success")),format.raw/*7.38*/("""
+                """),format.raw/*8.17*/("""</div>
 
-            """),_display_(/*7.14*/if(flash.containsKey("success"))/*7.46*/ {_display_(Seq[Any](format.raw/*7.48*/("""
-                """),format.raw/*8.17*/("""<div class="alert alert-success">
-                """),_display_(/*9.18*/flash/*9.23*/.get("success")),format.raw/*9.38*/("""
-                """),format.raw/*10.17*/("""</div>
+            """)))}),format.raw/*10.14*/("""
 
-            """)))}),format.raw/*12.14*/("""
-
-            """),format.raw/*14.13*/("""<div class="row">
+            """),format.raw/*12.13*/("""<div class="row">
 
                 <div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12 col-centered">
-                <h3 class = "text-center text-muted">Categories</h3>
+                <h3 class = "text-center text-muted">  Project Categories</h3>
 
-                        <a href=""""),_display_(/*19.35*/routes/*19.41*/.HomeController.products(0)),format.raw/*19.68*/(""""><button class = "btn btn-lg btn-Dark">All Categories
+                        <a href=""""),_display_(/*17.35*/routes/*17.41*/.HomeController.products(0)),format.raw/*17.68*/(""""><button class = "btn btn-lg btn-Dark">All Project Categories
                            </button></a>
-                        """),_display_(/*21.26*/for(c <- categories) yield /*21.46*/{_display_(Seq[Any](format.raw/*21.47*/("""
+                        """),_display_(/*19.26*/for(c <- categories) yield /*19.46*/{_display_(Seq[Any](format.raw/*19.47*/("""
 
-                            """),format.raw/*23.29*/("""<a href = """"),_display_(/*23.41*/routes/*23.47*/.HomeController.products(c.getId)),format.raw/*23.80*/(""""><button class = "btn btn-lg btn-Dark">"""),_display_(/*23.121*/c/*23.122*/.getName),format.raw/*23.130*/("""
-                            """),format.raw/*24.29*/("""<span class = "badge">"""),_display_(/*24.52*/c/*24.53*/.getProducts.size()),format.raw/*24.72*/("""</span></button>
+                            """),format.raw/*21.29*/("""<a href = """"),_display_(/*21.41*/routes/*21.47*/.HomeController.products(c.getId)),format.raw/*21.80*/(""""><button class = "btn btn-lg btn-Dark">"""),_display_(/*21.121*/c/*21.122*/.getName),format.raw/*21.130*/("""
+                            """),format.raw/*22.29*/("""<span class = "badge">"""),_display_(/*22.52*/c/*22.53*/.getProducts.size()),format.raw/*22.72*/("""</span></button>
                             </a>
-                        """)))}),format.raw/*26.26*/("""
-                """),format.raw/*27.17*/("""</div>
+                        """)))}),format.raw/*24.26*/("""
+                """),format.raw/*25.17*/("""</div>
 
                 <br>
 
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="productbounds">
 
-                    """),_display_(/*33.22*/for(p <- products) yield /*33.40*/ {_display_(Seq[Any](format.raw/*33.42*/("""
-                        """),format.raw/*34.25*/("""<div class="col-sm-6 col-md-4 col-xs-6 col-lg-4 products">
+                    """),_display_(/*31.22*/for(p <- products) yield /*31.40*/ {_display_(Seq[Any](format.raw/*31.42*/("""
+                        """),format.raw/*32.25*/("""<div class="col-sm-6 col-md-4 col-xs-6 col-lg-4 products">
                             <div class="thumbnail">
-                                """),_display_(/*36.34*/if(env.resource("public/images/productImages/" + p.getId + ".jpg").isDefined)/*36.111*/{_display_(Seq[Any](format.raw/*36.112*/("""
-                                    """),format.raw/*37.37*/("""<img src="/assets/images/productImages/"""),_display_(/*37.77*/(p.getId + ".jpg")),format.raw/*37.95*/("""" alt="...">
-                                """)))}/*38.34*/else/*38.38*/{_display_(Seq[Any](format.raw/*38.39*/("""
-                                    """),format.raw/*39.37*/("""<img src=""""),_display_(/*39.48*/routes/*39.54*/.Assets.versioned("images/productplaceholder.svg")),format.raw/*39.104*/("""" alt="...">
-                                """)))}),format.raw/*40.34*/("""
+                                """),_display_(/*34.34*/if(env.resource("public/images/productImages/" + p.getId + ".jpg").isDefined)/*34.111*/{_display_(Seq[Any](format.raw/*34.112*/("""
+                                    """),format.raw/*35.37*/("""<img src="/assets/images/productImages/"""),_display_(/*35.77*/(p.getId + ".jpg")),format.raw/*35.95*/("""" alt="...">
+                                """)))}/*36.34*/else/*36.38*/{_display_(Seq[Any](format.raw/*36.39*/("""
+                                    """),format.raw/*37.37*/("""<img src=""""),_display_(/*37.48*/routes/*37.54*/.Assets.versioned("images/productplaceholder.svg")),format.raw/*37.104*/("""" alt="...">
+                                """)))}),format.raw/*38.34*/("""
 
-                                """),format.raw/*42.33*/("""<div class="caption">
-                                    <h3 class="text-center">"""),_display_(/*43.62*/p/*43.63*/.getName),format.raw/*43.71*/("""</h3>
-                                    <h4 class="text-center"><span class = "redtext"><b>&euro;</b></span> """),_display_(/*44.107*/("%.2f".format(p.getPrice))),format.raw/*44.134*/("""</h4>
-                                    <p class="text-center"><b>Size:</b> """),_display_(/*45.74*/p/*45.75*/.getSize),format.raw/*45.83*/("""</p>
-                                    <p class="text-center"><b>Stock:</b> """),_display_(/*46.75*/p/*46.76*/.getStock),format.raw/*46.85*/("""</p>
-                                    <p class="text-center"><b>Brand:</b> """),_display_(/*47.75*/p/*47.76*/.getCategory.getName),format.raw/*47.96*/("""</p>
-                                    """),_display_(/*48.38*/if(user != null)/*48.54*/ {_display_(Seq[Any](format.raw/*48.56*/("""
-                                        """),format.raw/*49.41*/("""<p class = "text-center"><a href=""""),_display_(/*49.76*/routes/*49.82*/.HomeController.deleteProduct(p.getId)),format.raw/*49.120*/(""""
+                                """),format.raw/*40.33*/("""<div class="caption">
+                                    <h3 class="text-center">"""),_display_(/*41.62*/p/*41.63*/.getName),format.raw/*41.71*/("""</h3>
+                                    <h4 class="text-center"><span class = "redtext"><b>&euro;</b></span> """),_display_(/*42.107*/("%.2f".format(p.getPrice))),format.raw/*42.134*/("""</h4>
+                                    <p class="text-center"><b>Size:</b> """),_display_(/*43.74*/p/*43.75*/.getSize),format.raw/*43.83*/("""</p>
+                                    <p class="text-center"><b>Stock:</b> """),_display_(/*44.75*/p/*44.76*/.getStock),format.raw/*44.85*/("""</p>
+                                    <p class="text-center"><b>Brand:</b> """),_display_(/*45.75*/p/*45.76*/.getCategory.getName),format.raw/*45.96*/("""</p>
+                                    """),_display_(/*46.38*/if(user != null)/*46.54*/ {_display_(Seq[Any](format.raw/*46.56*/("""
+                                        """),format.raw/*47.41*/("""<p class = "text-center"><a href=""""),_display_(/*47.76*/routes/*47.82*/.HomeController.deleteProduct(p.getId)),format.raw/*47.120*/(""""
                                         onclick="return confirmDel();">
                                             <button class = "btn btn-lg btn-dark"><span class="glyphicon glyphicon-trash thrashbutton"></span> </button>
                                         </a>
                                         </p>
-                                        <p class = "text-center"><a href=""""),_display_(/*54.76*/routes/*54.82*/.HomeController.updateProduct(p.getId)),format.raw/*54.120*/("""">
+                                        <p class = "text-center"><a href=""""),_display_(/*52.76*/routes/*52.82*/.HomeController.updateProduct(p.getId)),format.raw/*52.120*/("""">
                                             <button class = "btn btn-lg btn-Dark"><span class="glyphicon glyphicon-pencil thrashbutton"></span> </button>
                                         </a>
                                         </p>
-                                    """)))}),format.raw/*58.38*/("""
-                                """),format.raw/*59.33*/("""</div>
+                                    """)))}),format.raw/*56.38*/("""
+                                """),format.raw/*57.33*/("""</div>
                             </div>
                         </div>
-                    """)))}),format.raw/*62.22*/(""" """),format.raw/*62.23*/("""<!--End of the loop-->
+                    """)))}),format.raw/*60.22*/(""" """),format.raw/*60.23*/("""<!--End of the loop-->
                 </div><!--End of product bounds-->
                 <!-- /.column-->
             </div>
                 <!-- /.row-->
         </div>
             <!-- /.container-->
-    """)))}),format.raw/*69.6*/("""
+    """)))}),format.raw/*67.6*/("""
 """))
       }
     }
@@ -118,11 +116,11 @@ Seq[Any](format.raw/*1.114*/("""
 object products extends products_Scope0.products
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 14 14:32:33 GMT 2019
+                  DATE: Thu Mar 14 20:55:42 GMT 2019
                   SOURCE: /home/wdd/SdevCA1/app/views/products.scala.html
-                  HASH: 5f621e82dfb68359b8390a4e5a47356d58962380
-                  MATRIX: 820->1|1028->113|1059->119|1089->141|1128->143|1163->152|1346->309|1386->341|1425->343|1469->360|1546->411|1559->416|1594->431|1639->448|1691->469|1733->483|1966->689|1981->695|2029->722|2177->843|2213->863|2252->864|2310->894|2349->906|2364->912|2418->945|2487->986|2498->987|2528->995|2585->1024|2635->1047|2645->1048|2685->1067|2791->1142|2836->1159|3004->1300|3038->1318|3078->1320|3131->1345|3302->1489|3389->1566|3429->1567|3494->1604|3561->1644|3600->1662|3665->1708|3678->1712|3717->1713|3782->1750|3820->1761|3835->1767|3907->1817|3984->1863|4046->1897|4156->1980|4166->1981|4195->1989|4335->2101|4384->2128|4490->2207|4500->2208|4529->2216|4635->2295|4645->2296|4675->2305|4781->2384|4791->2385|4832->2405|4901->2447|4926->2463|4966->2465|5035->2506|5097->2541|5112->2547|5172->2585|5591->2977|5606->2983|5666->3021|5981->3305|6042->3338|6167->3432|6196->3433|6434->3641
-                  LINES: 27->1|32->1|33->2|33->2|33->2|34->3|38->7|38->7|38->7|39->8|40->9|40->9|40->9|41->10|43->12|45->14|50->19|50->19|50->19|52->21|52->21|52->21|54->23|54->23|54->23|54->23|54->23|54->23|54->23|55->24|55->24|55->24|55->24|57->26|58->27|64->33|64->33|64->33|65->34|67->36|67->36|67->36|68->37|68->37|68->37|69->38|69->38|69->38|70->39|70->39|70->39|70->39|71->40|73->42|74->43|74->43|74->43|75->44|75->44|76->45|76->45|76->45|77->46|77->46|77->46|78->47|78->47|78->47|79->48|79->48|79->48|80->49|80->49|80->49|80->49|85->54|85->54|85->54|89->58|90->59|93->62|93->62|100->69
+                  HASH: c5011686b9387554c95da9739a74558c1a8d8ee4
+                  MATRIX: 820->1|1028->113|1059->119|1089->141|1128->143|1163->152|1227->190|1267->222|1306->224|1350->241|1427->292|1440->297|1475->312|1519->329|1571->350|1613->364|1856->580|1871->586|1919->613|2075->742|2111->762|2150->763|2208->793|2247->805|2262->811|2316->844|2385->885|2396->886|2426->894|2483->923|2533->946|2543->947|2583->966|2689->1041|2734->1058|2902->1199|2936->1217|2976->1219|3029->1244|3200->1388|3287->1465|3327->1466|3392->1503|3459->1543|3498->1561|3563->1607|3576->1611|3615->1612|3680->1649|3718->1660|3733->1666|3805->1716|3882->1762|3944->1796|4054->1879|4064->1880|4093->1888|4233->2000|4282->2027|4388->2106|4398->2107|4427->2115|4533->2194|4543->2195|4573->2204|4679->2283|4689->2284|4730->2304|4799->2346|4824->2362|4864->2364|4933->2405|4995->2440|5010->2446|5070->2484|5489->2876|5504->2882|5564->2920|5879->3204|5940->3237|6065->3331|6094->3332|6332->3540
+                  LINES: 27->1|32->1|33->2|33->2|33->2|34->3|36->5|36->5|36->5|37->6|38->7|38->7|38->7|39->8|41->10|43->12|48->17|48->17|48->17|50->19|50->19|50->19|52->21|52->21|52->21|52->21|52->21|52->21|52->21|53->22|53->22|53->22|53->22|55->24|56->25|62->31|62->31|62->31|63->32|65->34|65->34|65->34|66->35|66->35|66->35|67->36|67->36|67->36|68->37|68->37|68->37|68->37|69->38|71->40|72->41|72->41|72->41|73->42|73->42|74->43|74->43|74->43|75->44|75->44|75->44|76->45|76->45|76->45|77->46|77->46|77->46|78->47|78->47|78->47|78->47|83->52|83->52|83->52|87->56|88->57|91->60|91->60|98->67
                   -- GENERATED --
               */
           

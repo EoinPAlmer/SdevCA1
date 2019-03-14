@@ -9,18 +9,18 @@ import models.*;
 
 import javax.annotation.processing.Completion;
 
-public class AuthCustomer extends Action.Simple {
+public class AuthEmployee extends Action.Simple {
 
     public CompletionStage<Result> call(Http.Context ctx) {
 
         String id = ctx.session().get("email");
         if (id != null) {
             User u = User.getUserById(id);
-            if (u.getRole().equals("customer")){
+            if (u.getRole().equals("employee")){
                 return delegate.call(ctx);
             }
         }
-        ctx.flash().put("error", "customer Login Required.");
+        ctx.flash().put("error", "employee Login Required.");
         return CompletableFuture.completedFuture(redirect(routes.HomeController.index()));
     }
 }

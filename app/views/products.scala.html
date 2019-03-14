@@ -2,8 +2,6 @@
     @main("products", user) {
         <div class="container">
 
-            <h2 class = "text-center text-muted"><span class = "logo">Sneaker Sanctuary</span> Products In Stock</h2>
-
             @if(flash.containsKey("success")) {
                 <div class="alert alert-success">
                 @flash.get("success")
@@ -14,9 +12,9 @@
             <div class="row">
 
                 <div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12 col-centered">
-                <h3 class = "text-center text-muted">Categories</h3>
+                <h3 class = "text-center text-muted">  Project Categories</h3>
 
-                        <a href="@routes.HomeController.products(0)"><button class = "btn btn-lg btn-Dark">All Categories
+                        <a href="@routes.HomeController.products(0)"><button class = "btn btn-lg btn-Dark">All Project Categories
                            </button></a>
                         @for(c <- categories){
 
