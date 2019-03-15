@@ -23,13 +23,13 @@ create table product (
 create sequence product_seq;
 
 create table user (
+  type                          varchar(31) not null,
   email                         varchar(255) not null,
-  role                          varchar(255),
   name                          varchar(255),
   password                      varchar(255),
+  role                          varchar(255),
   constraint pk_user primary key (email)
 );
-
 alter table product add constraint fk_product_category_id foreign key (category_id) references category (id) on delete restrict on update restrict;
 create index ix_product_category_id on product (category_id);
 

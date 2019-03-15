@@ -1,8 +1,7 @@
-/*package models;
-
+package models.users;
 import java.util.*;
 import javax.persistence.*;
-import io.ebean.*;
+/*import io.ebean.*;*/
 import play.data.format.*;
 import play.data.validation.*;
 
@@ -17,6 +16,7 @@ import play.data.validation.*;
 @DiscriminatorValue("u")
 
 public class User extends Model {
+
     @Id
     private String email;
 
@@ -85,4 +85,4 @@ public class User extends Model {
     public void setPassword(String password) {
         this.password = password;
     }
-}*/
+}

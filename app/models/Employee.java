@@ -6,7 +6,7 @@ import play.data.format.*;
 import play.data.validation.*;
 
 @Entity
-public class Employee extends user {
+public class Employee extends Model {
 
     //Attributes
     @Id
@@ -21,13 +21,13 @@ public class Employee extends user {
     public Employee(){
     }
 
-    public static Finder<String,User> find = new Finder<String,User>(User.class);
+    public static Finder<String,Employee> find = new Finder<String,Employee>(Employee.class);
 
-    public static List<User> findAll(){
-        return User.find.all();
+    public static List<Employee> findAll(){
+        return Employee.find.all();
     }
 
-    public static User authenticate(String email,String password){
+    public static Employee authenticate(String email,String password){
         return find.where().eq("email",email).eq("password",password).findUnique();
     }
 
@@ -62,7 +62,7 @@ public class Employee extends user {
         this.password = password;
     }
 
-    public static User getUserById(String id){
+    public static Employee getEmployeeById(String id){
         if (id == null){
             return null;
         }else{

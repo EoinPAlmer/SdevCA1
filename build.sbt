@@ -1,4 +1,4 @@
-name := """SneakerSanctuary"""
+name := """IT-Project-Management"""
 
 version := "1.0-SNAPSHOT"
 

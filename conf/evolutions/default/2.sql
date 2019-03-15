@@ -17,6 +17,6 @@ insert into product (id,name,brand,size,stock,category_id,price) values(7, "Bale
 insert into product (id,name,brand,size,stock,category_id,price) values(8, "Balenciaga Thriple S", "Balenciaga", 9, 600, 10, 3);
 
 
-insert into User (email,role,name,password) values ('eoin@IT-Project-Management.com','admin','EoinPalmer','password');
-insert into User (email,role,name,password) values ('paul@IT-Project-Management.com','admin','PaulRoche','password');
-insert into User (email,role,name,password) values ('employee@IT-Project-Management.com','employee','employee','password');
+insert into user (type,email,role,name,password) values ('m','eoin@IT-Project-Management.com','manager','EoinPalmer Manager','password');
+insert into user (type,email,role,name,password) values ('m','paul@IT-Project-Management.com','manager','PaulRoche Manager','password');
+insert into user (type,email,role,name,password) values ('e','employee@IT-Project-Management.com','employee','employee','password');

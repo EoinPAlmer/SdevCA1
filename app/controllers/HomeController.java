@@ -1,151 +1,189 @@
 package controllers;
 
-import play.api.Environment;
 import play.mvc.*;
-import play.mvc.Http;
-import play.mvc.Http.MultipartFormData.FilePart;
-import play.mvc.Http.MultipartFormData;
-import java.io.File;
+
+import views.html.*;
+
+import play.api.Environment;
 import play.data.*;
 import play.db.ebean.Transactional;
 
-import java.beans.Transient;
 import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
 
 import models.*;
-import views.html.*;
+import models.users.*;
 
-//import org.im4Java.core.ConvertCmd;
-//import org.im4Java.core.IMOperation;
-
+/**
+ * This controller contains an action to handle HTTP requests
+ * to the application's home page.
+ */
 public class HomeController extends Controller {
 
     private FormFactory formFactory;
 
-    private Environment env;
-
     @Inject
-    public HomeController(FormFactory f, Environment e) {
+    public HomeController(FormFactory f) {
         this.formFactory = f;
-        this.env = e;
-    }
+}
+    /**
+     * An action that renders an HTML page with a welcome message.
+     * The configuration in the <code>routes</code> file means that
+     * this method will be called when the application receives a
+     * <code>GET</code> request with a path of <code>/</code>.
+     */
+    public Result Project(Long cat) {
+        List<Project> projectList = null;
+        List<Category> categoryList = Category.findAll();
+
+        if(cat ==0){
+            itemList = Project.findAll();
+        }else {
+            itemList = Category.find.ref(cat).getItems();
+        }
+        return ok(project.render(projectList, categoryList,User.getUserById(session().get("email"))));
+
+     }
 
     public Result index() {
-        return ok(index.render(getUserFromSession()));
+        return ok(index.render(User.getUserById(session().get("email"))));
     }
 
-    public Result products(Long cat) {
-        List<Product> productsList = new ArrayList<Product>();
-        List<Category> categoriesList = Category.findAll();
+    public Result about() {
+        return ok(about.render(User.getUserById(session().get("email"))));
+    }
+    @Security.Authenticated(Secured.class)
+    public Result addProject() {
+        Form<Project> itemForm = formFactory.form(Project.class);
+        return ok(addProject.render(itemForm,User.getUserById(session().get("email"))));
+}
+@Security.Authenticated(Secured.class)
+@Transactional
+public Result addProjectSubmit() {
+    Form<ItemOnSale> newItemForm = formFactory.form(Projects.class).bindFromRequest();
 
-        if(cat == 0){
-            productsList = Product.findAll();
+    if (newItemForm.hasErrors()) {
+        return badRequest(addProject.render(newItemForm,User.getUserById(session().get("email"))));
+    } else {
+        ItemOnSale newItem = newItemForm.get();
+        
+        if(newProject.getId()==null){
+        newProject.save();
         }else{
-            productsList = Category.find.ref(cat).getProducts();
+            newProject.update();
         }
+        flash("success", "Project " + newItem.getName() + " was added/updated.");
+        return redirect(controllers.routes.HomeController.onsale(0));
+    }
+}
+@Security.Authenticated(Secured.class)
+@Transactional
+@With(AuthAdmin.class)
+public Result deleteProject(Long id) {
 
+    // The following line of code finds the item object by id, then calls the delete() method
+    // on it to have it removed from the database.
+    Project.find.ref(id).delete();
 
-        return ok(products.render(productsList,categoriesList,getUserFromSession(),env));
+    // Now write to the flash scope, as we did for the successful item creation.
+    flash("success", "Project has been deleted.");
+    // And redirect to the onsale page
+    return redirect(controllers.routes.HomeController.project(0));
+}
+@Security.Authenticated(Secured.class)
+public Result updateProject(Long id) {
+    Project i;
+    Form<Project> projectForm;
+
+    try {
+        // Find the item by id
+        i = project.find.byId(id);
+
+        // Populate the form object with data from the item found in the database
+        projectForm = formFactory.form(Project.class).fill(i);
+    } catch (Exception ex) {
+        return badRequest("error");
     }
 
-    @Security.Authenticated(Secured.class)
-    @With(AuthAdmin.class)
-    @Transactional
-    public Result deleteProduct(Long id) {
-        Product.find.ref(id).delete();
+    // Display the "add item" page, to allow the user to update the item
+    return ok(project.render(itemForm,User.getUserById(session().get("email"))));
+}
+@Security.Authenticated(Secured.class)
+public Result addEmployee() {
+    Form<Employee> eForm = formFactory.form(Employee.class);
+    return ok(addEmployee.render(eForm,User.getUserById(session().get("email"))));
+}
+@Security.Authenticated(Secured.class)
+@Transactional
+public Result addEmployeeSubmit() {
+Form<Employee> newUserForm = formFactory.form(Employee.class).bindFromRequest();
+if (newUserForm.hasErrors()) {
+    
+    return badRequest(addEmployee.render(newUserForm,User.getUserById(session().get("email"))));
+} else {
+    Employee newUser = newUserForm.get();
+    
+    if(User.getUserById(newUser.getEmail())==null){
+        newUser.save();
+    }else{
+        newUser.update();
+    }
+    flash("success", "Employee" + newUser.getName() + " was added/updated.");
+    return redirect(controllers.routes.HomeController.usersEmployee()); 
+    }
+}
+@Security.Authenticated(Secured.class)
+@Transactional
+@With(AuthAdmin.class)
+public Result deleteEmployee(String email) {
 
-        flash("success", "Product has been deleted");
+    // The following line of code finds the item object by id, then calls the delete() method
+    // on it to have it removed from the database.
 
-        return redirect(controllers.routes.HomeController.products(0));
+    Employee u = (Employee) User.getUserById(email);
+    u.delete();
+
+    // Now write to the flash scope, as we did for the successful item creation.
+    flash("success", "Employee has been deleted.");
+    // And redirect to the onsale page
+    return redirect(controllers.routes.HomeController.usersEmployee());
+}
+@Security.Authenticated(Secured.class)
+public Result updateEmployee(String email) {
+    Employee u;
+    Form<Employee> userForm;
+
+    try {
+        // Find the item by email
+        u = (Employee) User.getUserById(email);
+        u.update();
+
+        // Populate the form object with data from the user found in the database
+        userForm = formFactory.form(Employee.class).fill(u);
+    } catch (Exception ex) {
+        return badRequest("error");
     }
 
+    // Display the "add item" page, to allow the user to update the item
+    return ok(addEmployee.render(userForm,User.getUserById(session().get("email"))));
+}
+public Result usersmanager() {
+    List<Manager> userList = null;
 
-    @Security.Authenticated(Secured.class)
-    @With(AuthAdmin.class)
-    public Result addProduct() {
-        Form<Product> addProductForm = formFactory.form(Product.class);
-        return ok(addProduct.render(addProductForm, getUserFromSession()));
-    }
+    userList = Manager.findAll();
 
-    @Security.Authenticated(Secured.class)
-    @With(AuthAdmin.class)
-    @Transactional
-    public Result addProductSubmit() {
-        Form<Product> newProductForm = formFactory.form(Product.class).bindFromRequest();
+    return ok(manager.render(userList,User.getUserById(session().get("email"))));
 
-        if (newProductForm.hasErrors()) {
-            return badRequest(addProduct.render(newProductForm, getUserFromSession()));
-        }
+ }
 
-        Product p = newProductForm.get();
+ public Result usersCustomer() {
+    List<Employee> eList = null;
 
-        if (p.getId() == null) {
-            p.save();
-        } else if (p.getId() != null) {
-            p.update();
-        }
+    eList = Employee.findAll();
 
-        MultipartFormData data = request().body().asMultipartFormData();
-        FilePart image = data.getFile("upload");
+    return ok(Employee.render(eList,User.getUserById(session().get("email"))));
 
-        String saveImageMsg = saveFile(p.getId(),image);
-
-
-        flash("success", "Product " + p.getName() + " has been created/updated " + saveImageMsg);
-
-        return redirect(controllers.routes.HomeController.products(0));
-    }
-
-    @Security.Authenticated(Secured.class)
-    @With(AuthAdmin.class)
-    @Transactional
-    public Result updateProduct(Long id) {
-
-        Product p;
-        Form<Product> productForm;
-
-        try {
-            p = Product.find.byId(id);
-
-            productForm = formFactory.form(Product.class).fill(p);
-        } catch (Exception ex) {
-            return badRequest("error");
-        }
-
-        return ok(addProduct.render(productForm, getUserFromSession()));
-
-    }
-
-    private User getUserFromSession() {
-        return User.getUserById(session().get("email"));
-    }
-
-
-    public String saveFile(Long id,FilePart<File> uploaded){
-        if (uploaded != null){
-            String fileName = uploaded.getFilename();
-
-            String extension = "";
-
-            String mimeType = uploaded.getContentType();
-
-            if (mimeType.startsWith("image/")){
-                int i = fileName.lastIndexOf(".");
-                if (i >= 0){
-                    extension = fileName.substring(i+1);
-                }
-
-                File file = uploaded.getFile();
-
-                file.renameTo(new File("assets/images/productImages/" + id + "." + extension));
-                return "/ file uploaded";
-            }
-
-            return "no file";
-        }
-        return "no file";
-    }
+ }
 
 }
