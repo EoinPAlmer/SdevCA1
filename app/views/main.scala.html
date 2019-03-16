@@ -36,11 +36,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li @if(title == "home") {
                             class="active"}><a href="@routes.HomeController.index()">Home</a></li>
-                        <li @if(title == "products") {
-                            class="active"}><a href="@routes.HomeController.products()">Projects</a></li>
+                        <li @if(title == "projects") {
+                            class="active"}><a href="@routes.HomeController.Project()">Projects</a></li>
                             @if(user != null) {
-                                <li @if(title == "Add Product") {class = "active"}>
-                                <a href="@routes.HomeController.addProduct()">Add A Project</a>
+                                <li @if(title == "Add Project") {class = "active"}>
+                                <a href="@routes.HomeController.addProject()">Add A Project</a>
                                 </li>
                             }
                         <li @if(title == "login"){class = "active"}>

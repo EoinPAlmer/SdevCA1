@@ -16,15 +16,15 @@ public class Category extends Model {
     private String name;
 
     @OneToMany
-    private List<Product> products;
+    private List<Project> project;
 
     public Category(){
     }
 
-    public Category(Long id, String name, List<Product> products) {
+    public Category(Long id, String name, List<Product> project) {
         this.setId(id);
         this.setName(name);
-        this.setProducts(products);
+        this.setProject(project);
     }
 
     public Long getId() {
@@ -43,12 +43,12 @@ public class Category extends Model {
         this.name = name;
     }
 
-    public List<Product> getProducts() {
-        return products;
+    public List<Project> getProject() {
+        return project;
     }
 
-    public void setProducts(List<Product> products) {
-        this.products = products;
+    public void setProject(List<Project> project) {
+        this.project = project;
     }
 
     public static Finder<Long,Category> find = new Finder<Long,Category>(Category.class);

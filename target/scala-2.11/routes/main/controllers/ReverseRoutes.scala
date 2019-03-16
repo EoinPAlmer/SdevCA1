@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/SdevCA1/conf/routes
-// @DATE:Fri Mar 15 12:37:05 GMT 2019
+// @DATE:Sat Mar 16 14:10:01 GMT 2019
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -20,13 +20,13 @@ package controllers {
     }
 
   
-    // @LINE:24
+    // @LINE:22
     def usersManager(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "Manager")
     }
   
-    // @LINE:26
+    // @LINE:24
     def usersEmployee(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "Employee")
@@ -38,25 +38,25 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "Project" + queryString(List(if(cat == 0L) None else Some(implicitly[QueryStringBindable[Long]].unbind("cat", cat)))))
     }
   
-    // @LINE:16
+    // @LINE:15
     def addProject(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "addProject")
     }
   
-    // @LINE:20
+    // @LINE:18
     def deleteProject(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "delProject/" + implicitly[PathBindable[Long]].unbind("id", id))
     }
   
-    // @LINE:22
+    // @LINE:20
     def updateProject(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "updateProject/" + implicitly[PathBindable[Long]].unbind("id", id))
     }
   
-    // @LINE:18
+    // @LINE:16
     def addProjectSubmit(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "addProjectSubmit")
@@ -77,13 +77,13 @@ package controllers {
     }
 
   
-    // @LINE:12
+    // @LINE:11
     def loginSubmit(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "loginSubmit")
     }
   
-    // @LINE:14
+    // @LINE:13
     def logout(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "logout")
@@ -97,14 +97,14 @@ package controllers {
   
   }
 
-  // @LINE:30
+  // @LINE:28
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:30
+    // @LINE:28
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))

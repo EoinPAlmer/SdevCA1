@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/SdevCA1/conf/routes
-// @DATE:Fri Mar 15 12:37:05 GMT 2019
+// @DATE:Sat Mar 16 14:10:01 GMT 2019
 
 package router
 
@@ -20,7 +20,7 @@ class Routes(
   HomeController_0: controllers.HomeController,
   // @LINE:10
   LoginController_2: controllers.LoginController,
-  // @LINE:30
+  // @LINE:28
   Assets_1: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -31,7 +31,7 @@ class Routes(
     HomeController_0: controllers.HomeController,
     // @LINE:10
     LoginController_2: controllers.LoginController,
-    // @LINE:30
+    // @LINE:28
     Assets_1: controllers.Assets
   ) = this(errorHandler, HomeController_0, LoginController_2, Assets_1, "/")
 
@@ -117,7 +117,7 @@ class Routes(
     )
   )
 
-  // @LINE:12
+  // @LINE:11
   private[this] lazy val controllers_LoginController_loginSubmit3_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("loginSubmit")))
   )
@@ -134,7 +134,7 @@ class Routes(
     )
   )
 
-  // @LINE:14
+  // @LINE:13
   private[this] lazy val controllers_LoginController_logout4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logout")))
   )
@@ -151,7 +151,7 @@ class Routes(
     )
   )
 
-  // @LINE:16
+  // @LINE:15
   private[this] lazy val controllers_HomeController_addProject5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addProject")))
   )
@@ -168,7 +168,7 @@ class Routes(
     )
   )
 
-  // @LINE:18
+  // @LINE:16
   private[this] lazy val controllers_HomeController_addProjectSubmit6_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addProjectSubmit")))
   )
@@ -185,7 +185,7 @@ class Routes(
     )
   )
 
-  // @LINE:20
+  // @LINE:18
   private[this] lazy val controllers_HomeController_deleteProject7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("delProject/"), DynamicPart("id", """[^/]+""",true)))
   )
@@ -202,7 +202,7 @@ class Routes(
     )
   )
 
-  // @LINE:22
+  // @LINE:20
   private[this] lazy val controllers_HomeController_updateProject8_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateProject/"), DynamicPart("id", """[^/]+""",true)))
   )
@@ -219,7 +219,7 @@ class Routes(
     )
   )
 
-  // @LINE:24
+  // @LINE:22
   private[this] lazy val controllers_HomeController_usersManager9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Manager")))
   )
@@ -236,7 +236,7 @@ class Routes(
     )
   )
 
-  // @LINE:26
+  // @LINE:24
   private[this] lazy val controllers_HomeController_usersEmployee10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Employee")))
   )
@@ -253,7 +253,7 @@ class Routes(
     )
   )
 
-  // @LINE:30
+  // @LINE:28
   private[this] lazy val controllers_Assets_versioned11_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
@@ -291,55 +291,55 @@ class Routes(
         controllers_LoginController_login2_invoker.call(LoginController_2.login)
       }
   
-    // @LINE:12
+    // @LINE:11
     case controllers_LoginController_loginSubmit3_route(params) =>
       call { 
         controllers_LoginController_loginSubmit3_invoker.call(LoginController_2.loginSubmit)
       }
   
-    // @LINE:14
+    // @LINE:13
     case controllers_LoginController_logout4_route(params) =>
       call { 
         controllers_LoginController_logout4_invoker.call(LoginController_2.logout)
       }
   
-    // @LINE:16
+    // @LINE:15
     case controllers_HomeController_addProject5_route(params) =>
       call { 
         controllers_HomeController_addProject5_invoker.call(HomeController_0.addProject)
       }
   
-    // @LINE:18
+    // @LINE:16
     case controllers_HomeController_addProjectSubmit6_route(params) =>
       call { 
         controllers_HomeController_addProjectSubmit6_invoker.call(HomeController_0.addProjectSubmit)
       }
   
-    // @LINE:20
+    // @LINE:18
     case controllers_HomeController_deleteProject7_route(params) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_HomeController_deleteProject7_invoker.call(HomeController_0.deleteProject(id))
       }
   
-    // @LINE:22
+    // @LINE:20
     case controllers_HomeController_updateProject8_route(params) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_HomeController_updateProject8_invoker.call(HomeController_0.updateProject(id))
       }
   
-    // @LINE:24
+    // @LINE:22
     case controllers_HomeController_usersManager9_route(params) =>
       call { 
         controllers_HomeController_usersManager9_invoker.call(HomeController_0.usersManager)
       }
   
-    // @LINE:26
+    // @LINE:24
     case controllers_HomeController_usersEmployee10_route(params) =>
       call { 
         controllers_HomeController_usersEmployee10_invoker.call(HomeController_0.usersEmployee)
       }
   
-    // @LINE:30
+    // @LINE:28
     case controllers_Assets_versioned11_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
         controllers_Assets_versioned11_invoker.call(Assets_1.versioned(path, file))

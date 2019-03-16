@@ -168,16 +168,16 @@ public Result updateEmployee(String email) {
     // Display the "add item" page, to allow the user to update the item
     return ok(addEmployee.render(userForm,User.getUserById(session().get("email"))));
 }
-public Result usersmanager() {
+public Result usersManager() {
     List<Manager> userList = null;
 
     userList = Manager.findAll();
 
-    return ok(manager.render(userList,User.getUserById(session().get("email"))));
+    return ok(Manager.render(userList,User.getUserById(session().get("email"))));
 
  }
 
- public Result usersCustomer() {
+ public Result usersEmployee() {
     List<Employee> eList = null;
 
     eList = Employee.findAll();
