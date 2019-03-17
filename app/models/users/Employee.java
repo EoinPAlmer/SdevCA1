@@ -1,7 +1,7 @@
 package models.users;
 import java.util.*;
 import javax.persistence.*;
-/*import io.ebean.*;*/
+import io.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
 
@@ -17,7 +17,7 @@ public class Employee extends User{
 
     }
 	
-	public Employee(String email, String role, String name, String password, String street1, String street2, String town, String postCode)
+	public Employee(String email, String role, String name, String password)/*, String street1, String street2, String town, String postCode)*/
 	{
         super(email, role, name, password);
     }

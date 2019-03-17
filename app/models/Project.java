@@ -5,7 +5,7 @@ import java.util.*;
 import javax.persistence.*;
 import play.data.format.*;
 import play.data.validation.*;
-import com.avaje.ebean.*;
+import io.ebean.*;
 
 @Entity
 public class Project extends Model {

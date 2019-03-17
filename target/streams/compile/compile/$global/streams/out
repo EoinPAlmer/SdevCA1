@@ -1,0 +1,101 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/wdd/SdevCA1/app/views/login.scala.html:13:36: method globalError in class Form is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        @loginForm.globalError.message[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:45:1: method render in class views.html.project cannot be applied to given types;[0m
+[0m[[0m[31merror[0m] [0m[0m  required: java.util.List<models.Project>,java.util.List<models.Category>,models.users.User,play.api.Environment[0m
+[0m[[0m[31merror[0m] [0m[0m  found: java.util.List<models.Project>,java.util.List<models.Category>,models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m  reason: actual and formal argument lists differ in length[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok(project.render(projectList, categoryList,User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:54:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable about[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok(about.render(User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:64:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class ItemOnSale[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    Form<ItemOnSale> newItemForm = formFactory.form(Projects.class).bindFromRequest();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:64:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Projects[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    Form<ItemOnSale> newItemForm = formFactory.form(Projects.class).bindFromRequest();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:69:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class ItemOnSale[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        ItemOnSale newItem = newItemForm.get();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:71:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable newProject[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        if(newProject.getId()==null){[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:72:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable newProject[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        newProject.save();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:74:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable newProject[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            newProject.update();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:77:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method onsale(int)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable HomeController of type controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        return redirect(controllers.routes.HomeController.onsale(0));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:92:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method project(int)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable HomeController of type controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    return redirect(controllers.routes.HomeController.project(0));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:101:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable find[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class views.html.project[0m
+[0m[[0m[31merror[0m] [0m[0m        i = project.find.byId(id);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:110:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable itemForm[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    return ok(project.render(itemForm,User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:115:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable addEmployee[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    return ok(addEmployee.render(eForm,User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:123:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable addEmployee[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    return badRequest(addEmployee.render(newUserForm,User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:169:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable addEmployee[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    return ok(addEmployee.render(userForm,User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:176:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method render(java.util.List<models.users.Manager>,models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.Manager[0m
+[0m[[0m[31merror[0m] [0m[0m    return ok(Manager.render(userList,User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/HomeController.java:185:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method render(java.util.List<models.users.Employee>,models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.Employee[0m
+[0m[[0m[31merror[0m] [0m[0m    return ok(Employee.render(eList,User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/LoginController.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Login[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0m        Form<Login> loginForm = formFactory.form(Login.class);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/LoginController.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Login[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0m        Form<Login> loginForm = formFactory.form(Login.class);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/LoginController.java:27:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable User[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok(login.render(loginForm, User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/LoginController.java:31:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Login[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0m        Form<Login> loginForm = formFactory.form(Login.class).bindFromRequest();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/LoginController.java:31:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Login[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0m        Form<Login> loginForm = formFactory.form(Login.class).bindFromRequest();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/controllers/LoginController.java:34:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable User[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0m            return badRequest(login.render(loginForm, User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/models/Category.java:58:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method where()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable find of type io.ebean.Finder<java.lang.Long,models.Category>[0m
+[0m[[0m[31merror[0m] [0m[0m        return Category.find.where().orderBy("name asc").findList();[0m

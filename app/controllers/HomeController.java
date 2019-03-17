@@ -38,9 +38,9 @@ public class HomeController extends Controller {
         List<Category> categoryList = Category.findAll();
 
         if(cat ==0){
-            itemList = Project.findAll();
+            projectList = Project.findAll();
         }else {
-            itemList = Category.find.ref(cat).getItems();
+            projectList = Category.find.ref(cat).getProject();
         }
         return ok(project.render(projectList, categoryList,User.getUserById(session().get("email"))));
 
@@ -79,7 +79,7 @@ public Result addProjectSubmit() {
 }
 @Security.Authenticated(Secured.class)
 @Transactional
-@With(AuthAdmin.class)
+@With(AuthManager.class)
 public Result deleteProject(Long id) {
 
     // The following line of code finds the item object by id, then calls the delete() method
@@ -135,7 +135,7 @@ if (newUserForm.hasErrors()) {
 }
 @Security.Authenticated(Secured.class)
 @Transactional
-@With(AuthAdmin.class)
+@With(AuthManager.class)
 public Result deleteEmployee(String email) {
 
     // The following line of code finds the item object by id, then calls the delete() method

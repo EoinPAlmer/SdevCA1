@@ -1,4 +1,4 @@
-@(title: String, user: models.User)(content: Html)
+@(title: String, user: models.users.User)(content: Html)
 @import javax.swing.text.html.HTML
 <html>
     <head>
@@ -38,7 +38,7 @@
                             class="active"}><a href="@routes.HomeController.index()">Home</a></li>
                         <li @if(title == "projects") {
                             class="active"}><a href="@routes.HomeController.Project()">Projects</a></li>
-                            @if(user != null) {
+                            @if((user != null) && ("manager".equals(user.getRole()))) {
                                 <li @if(title == "Add Project") {class = "active"}>
                                 <a href="@routes.HomeController.addProject()">Add A Project</a>
                                 </li>

@@ -2,7 +2,8 @@ package models;
 
 import java.util.*;
 import javax.persistence.*;
-import com.avaje.ebean.Model;
+import io.ebean.*;
+import play.data.format.*;
 import play.data.validation.*;
 
 @Entity
@@ -21,7 +22,7 @@ public class Category extends Model {
     public Category(){
     }
 
-    public Category(Long id, String name, List<Product> project) {
+    public Category(Long id, String name, List<Project> project) {
         this.setId(id);
         this.setName(name);
         this.setProject(project);

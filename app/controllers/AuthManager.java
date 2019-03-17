@@ -23,7 +23,7 @@ public class AuthManager extends Action.Simple {
         String id = ctx.session().get("email");
         if (id != null) {
             User u = User.getUserById(id);
-            if ("admin".equals(u.getRole())) {
+            if ("manager".equals(u.getRole())) {
                 // Call the intercepted action method
                 return delegate.call(ctx);
             }

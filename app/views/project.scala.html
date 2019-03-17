@@ -1,4 +1,4 @@
-@(project: List[models.Project],categories: List[models.Category], user: models.User, env: play.api.Environment)
+@(project: List[models.Project],categories: List[models.Category], user: models.users.User, env: play.api.Environment)
     @main("project", user) {
         <div class="container">
 
@@ -31,10 +31,10 @@
                     @for(p <- project) {
                         <div class="col-sm-6 col-md-4 col-xs-6 col-lg-4 project">
                             <div class="thumbnail">
-                                @if(env.resource("public/images/productImages/" + p.getId + ".jpg").isDefined){
-                                    <img src="/assets/images/productImages/@(p.getId + ".jpg")" alt="...">
+                                @if(env.resource("public/images/projectImages/" + p.getId + ".jpg").isDefined){
+                                    <img src="/assets/images/projectImages/@(p.getId + ".jpg")" alt="...">
                                 }else{
-                                    <img src="@routes.Assets.versioned("images/productplaceholder.svg")" alt="...">
+                                    <img src="@routes.Assets.versioned("images/projectplaceholder.svg")" alt="...">
                                 }
 
                                 <div class="caption">
@@ -43,7 +43,7 @@
                                     <p class="text-center"><b>Size:</b> @p.getSize</p>
                                     <p class="text-center"><b>Stock:</b> @p.getStock</p>
                                     <p class="text-center"><b>Brand:</b> @p.getCategory.getName</p>
-                                    @if(user != null) {
+                                    @if((user != null) && ("manager".equals(user.getRole()))) {
                                         <p class = "text-center"><a href="@routes.HomeController.deleteProject(p.getId)"
                                         onclick="return confirmDel();">
                                             <button class = "btn btn-lg btn-dark"><span class="glyphicon glyphicon-trash thrashbutton"></span> </button>
