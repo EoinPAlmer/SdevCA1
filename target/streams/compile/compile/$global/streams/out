@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/SdevCA1/app/views/login.scala.html:23:74: value loginSubmit is not a member of controllers.ReverseLoginController[0m
-[0m[[0m[31merror[0m] [0m[0m                @helper.form(action = controllers.routes.LoginController.loginSubmit()) {[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                         ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wdd/SdevCA1/app/views/login.scala.html:13:36: method globalError in class Form is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        @loginForm.globalError.message[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

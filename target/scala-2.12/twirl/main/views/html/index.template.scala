@@ -62,7 +62,7 @@ Seq[Any](_display_(/*3.2*/main("home",user)/*3.19*/{_display_(Seq[Any](format.ra
 
               /*
                   -- GENERATED --
-                  DATE: Mon Mar 18 15:36:53 GMT 2019
+                  DATE: Mon Mar 18 17:15:31 GMT 2019
                   SOURCE: /home/wdd/SdevCA1/app/views/index.scala.html
                   HASH: 951be6617ae54a69e55437f93970926bb30e69b1
                   MATRIX: 651->1|1000->36|1119->63|1144->80|1182->81|1219->92|1533->379|1548->385|1612->428
