@@ -40,40 +40,9 @@ Seq[Any](_display_(/*3.2*/main("home",user)/*3.19*/{_display_(Seq[Any](format.ra
             <div class="col-md-6">
                 <h1>Who Are We?</h1>
                 <h3 class="text-muted">We are IT-Project-Management</h3>
-                <p class="text-muted">For over a decade, Sneaker Sanctuary has changed the landscape of sneaker retail. Carrying every brand name on the market, Sneaker Sanctuary has evolved from a one-stop sneaker destination, to a cultural hub for sneaker enthusiasts and novices alike.</p>
-                <p class="text-muted"> Sneaker Sanctuary remains as the premiere source for everything sneakers.</p>
-                <p class="text-muted"> From Yeeƶys to Nike, adidas, Balenciaga and more, we have it all.</p>
             </div>
             <div class="col-md-6">
-                <img src=""""),_display_(/*17.28*/routes/*17.34*/.Assets.versioned("images/SDevProHome.png")),format.raw/*17.77*/("""" class="img-responsive">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center">Sign Up For Our Weekly News Letter</h3>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-offset-3 col-md-6">
-                <form role="form">
-                    <div class="form-group">
-                        <label class="control-label" for="exampleInputEmail1">Name</label>
-                        <input class="form-control" id="exampleInputEmail1" placeholder="Name" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="exampleInputPassword1">Email Address</label>
-                        <input class="form-control" id="exampleInputPassword1" placeholder="Example@Example.com" type="email">
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="exampleInputPassword1">Phone Number</label>
-                        <input class="form-control" id="exampleInputPassword1" placeholder="Phone Number" type="text">
-                    </div>
-                    <button type="submit" class="btn btn-dark btn-lg">Submit
-                        <i class="-o fa fa-fw fa-send"></i>
-                    </button>
-                </form>
+                <img src=""""),_display_(/*14.28*/routes/*14.34*/.Assets.versioned("images/SDevProHome.png")),format.raw/*14.77*/("""" class="img-responsive">
             </div>
         </div>
     </div>
@@ -93,11 +62,11 @@ Seq[Any](_display_(/*3.2*/main("home",user)/*3.19*/{_display_(Seq[Any](format.ra
 
               /*
                   -- GENERATED --
-                  DATE: Sun Mar 17 13:56:57 GMT 2019
+                  DATE: Mon Mar 18 15:36:53 GMT 2019
                   SOURCE: /home/wdd/SdevCA1/app/views/index.scala.html
-                  HASH: 31f478863fe0e81905ad2af792fc9ff09f42a99a
-                  MATRIX: 651->1|1000->36|1119->63|1144->80|1182->81|1219->92|2052->898|2067->904|2131->947
-                  LINES: 24->1|29->2|34->3|34->3|34->3|37->6|48->17|48->17|48->17
+                  HASH: 951be6617ae54a69e55437f93970926bb30e69b1
+                  MATRIX: 651->1|1000->36|1119->63|1144->80|1182->81|1219->92|1533->379|1548->385|1612->428
+                  LINES: 24->1|29->2|34->3|34->3|34->3|37->6|45->14|45->14|45->14
                   -- GENERATED --
               */
           

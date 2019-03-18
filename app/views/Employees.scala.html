@@ -1,0 +1,28 @@
+@(employees: List[models.users.Employee],user: models.users.User)
+@main("Employees",user){
+    <h1>Current Employees</h1>
+
+<div class="col-sm-9">
+    <h4>Here are all the current Employees in the system</h4>
+        <table class ="table table-boardered table-vover table-condensed">
+        <thead>
+
+        <tr>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Name</th>
+            <th>Password</th>
+        </tr>
+        </thead>
+        <tbody>
+            @for(e<-employees){
+                <tr>
+                    <td>e.getEmail</td>
+                    <td>e.getRole</td>
+                    <td>e.getName</td>
+                    <td>e.getPassword</td>
+            }
+        </tbody>
+    </table>
+</div>
+}

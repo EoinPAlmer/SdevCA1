@@ -1,0 +1,16 @@
+2019-03-18 17:02:41,525 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] initialized at jdbc:h2:file:./data/productsDB
+2019-03-18 17:02:41,527 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2019-03-18 17:02:43,277 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2019-03-18T17:02:43.277Z
+2019-03-18 17:02:43,508 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-3 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-03-18 17:02:43,706 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2019-03-18 17:02:43,714 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
+2019-03-18 17:02:44,176 [WARN] from application in application-akka.actor.default-dispatcher-7 - The "validate" method in class "models.users.Login" is deprecated since Play 2.6. To migrate to class-level constraints see https://www.playframework.com/documentation/2.6.x/Migration26#java-form-changes and https://www.playframework.com/documentation/2.6.x/JavaForms#Advanced-validation
+2019-03-18 17:02:50,505 [INFO] from play.core.server.AkkaHttpServer in pool-39-thread-4 - Stopping server...
+2019-03-18 17:02:50,580 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2019-03-18T17:02:50.580Z after 7s.
+2019-03-18 17:02:50,581 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.

@@ -42,7 +42,7 @@ public class HomeController extends Controller {
         }else {
             projectList = Category.find.ref(cat).getProject();
         }
-        return ok(project.render(projectList, categoryList,User.getUserById(session().get("email"))));
+        return ok(project.render(projectList, categoryList,(User.getUserById(session().get("email")))));
 
      }
 
@@ -50,9 +50,6 @@ public class HomeController extends Controller {
         return ok(index.render(User.getUserById(session().get("email"))));
     }
 
-    public Result about() {
-        return ok(about.render(User.getUserById(session().get("email"))));
-    }
     @Security.Authenticated(Secured.class)
     public Result addProject() {
         Form<Project> itemForm = formFactory.form(Project.class);
@@ -61,20 +58,20 @@ public class HomeController extends Controller {
 @Security.Authenticated(Secured.class)
 @Transactional
 public Result addProjectSubmit() {
-    Form<ItemOnSale> newItemForm = formFactory.form(Projects.class).bindFromRequest();
+    Form<Project> newProjectForm = formFactory.form(Project.class).bindFromRequest();
 
-    if (newItemForm.hasErrors()) {
-        return badRequest(addProject.render(newItemForm,User.getUserById(session().get("email"))));
+    if (newProjectForm.hasErrors()) {
+        return badRequest(addProject.render(newProjectForm,User.getUserById(session().get("email"))));
     } else {
-        ItemOnSale newItem = newItemForm.get();
+        Project newProject = newProjectForm.get();
         
         if(newProject.getId()==null){
         newProject.save();
         }else{
             newProject.update();
         }
-        flash("success", "Project " + newItem.getName() + " was added/updated.");
-        return redirect(controllers.routes.HomeController.onsale(0));
+        flash("success", "Project " + newProject.getName() + " was added/updated.");
+        return redirect(controllers.routes.HomeController.Project(0));
     }
 }
 @Security.Authenticated(Secured.class)
@@ -89,7 +86,7 @@ public Result deleteProject(Long id) {
     // Now write to the flash scope, as we did for the successful item creation.
     flash("success", "Project has been deleted.");
     // And redirect to the onsale page
-    return redirect(controllers.routes.HomeController.project(0));
+    return redirect(controllers.routes.HomeController.Project(0));
 }
 @Security.Authenticated(Secured.class)
 public Result updateProject(Long id) {
@@ -98,7 +95,7 @@ public Result updateProject(Long id) {
 
     try {
         // Find the item by id
-        i = project.find.byId(id);
+        i = Project.find.byId(id);
 
         // Populate the form object with data from the item found in the database
         projectForm = formFactory.form(Project.class).fill(i);
@@ -107,82 +104,16 @@ public Result updateProject(Long id) {
     }
 
     // Display the "add item" page, to allow the user to update the item
-    return ok(project.render(itemForm,User.getUserById(session().get("email"))));
+    return ok(addProject.render(projectForm,User.getUserById(session().get("email"))));
 }
-@Security.Authenticated(Secured.class)
-public Result addEmployee() {
-    Form<Employee> eForm = formFactory.form(Employee.class);
-    return ok(addEmployee.render(eForm,User.getUserById(session().get("email"))));
-}
-@Security.Authenticated(Secured.class)
-@Transactional
-public Result addEmployeeSubmit() {
-Form<Employee> newUserForm = formFactory.form(Employee.class).bindFromRequest();
-if (newUserForm.hasErrors()) {
-    
-    return badRequest(addEmployee.render(newUserForm,User.getUserById(session().get("email"))));
-} else {
-    Employee newUser = newUserForm.get();
-    
-    if(User.getUserById(newUser.getEmail())==null){
-        newUser.save();
-    }else{
-        newUser.update();
-    }
-    flash("success", "Employee" + newUser.getName() + " was added/updated.");
-    return redirect(controllers.routes.HomeController.usersEmployee()); 
-    }
-}
-@Security.Authenticated(Secured.class)
-@Transactional
-@With(AuthManager.class)
-public Result deleteEmployee(String email) {
 
-    // The following line of code finds the item object by id, then calls the delete() method
-    // on it to have it removed from the database.
-
-    Employee u = (Employee) User.getUserById(email);
-    u.delete();
-
-    // Now write to the flash scope, as we did for the successful item creation.
-    flash("success", "Employee has been deleted.");
-    // And redirect to the onsale page
-    return redirect(controllers.routes.HomeController.usersEmployee());
-}
-@Security.Authenticated(Secured.class)
-public Result updateEmployee(String email) {
-    Employee u;
-    Form<Employee> userForm;
-
-    try {
-        // Find the item by email
-        u = (Employee) User.getUserById(email);
-        u.update();
-
-        // Populate the form object with data from the user found in the database
-        userForm = formFactory.form(Employee.class).fill(u);
-    } catch (Exception ex) {
-        return badRequest("error");
-    }
-
-    // Display the "add item" page, to allow the user to update the item
-    return ok(addEmployee.render(userForm,User.getUserById(session().get("email"))));
-}
-public Result usersManager() {
-    List<Manager> userList = null;
-
-    userList = Manager.findAll();
-
-    return ok(Manager.render(userList,User.getUserById(session().get("email"))));
-
- }
 
  public Result usersEmployee() {
     List<Employee> eList = null;
 
     eList = Employee.findAll();
 
-    return ok(Employee.render(eList,User.getUserById(session().get("email"))));
+    return ok(Employees.render(eList,User.getUserById(session().get("email"))));
 
  }
 

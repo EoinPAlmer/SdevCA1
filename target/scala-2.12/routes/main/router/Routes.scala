@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/SdevCA1/conf/routes
-// @DATE:Sun Mar 17 13:56:57 GMT 2019
+// @DATE:Mon Mar 18 16:51:05 GMT 2019
 
 package router
 
@@ -18,7 +18,7 @@ class Routes(
   HomeController_0: controllers.HomeController,
   // @LINE:10
   LoginController_2: controllers.LoginController,
-  // @LINE:28
+  // @LINE:26
   Assets_1: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -29,7 +29,7 @@ class Routes(
     HomeController_0: controllers.HomeController,
     // @LINE:10
     LoginController_2: controllers.LoginController,
-    // @LINE:28
+    // @LINE:26
     Assets_1: controllers.Assets
   ) = this(errorHandler, HomeController_0, LoginController_2, Assets_1, "/")
 
@@ -46,13 +46,12 @@ class Routes(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """Project""", """controllers.HomeController.Project(cat:Long ?= 0L)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.LoginController.login"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """loginSubmit""", """controllers.LoginController.loginSubmit"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """loginSubmit""", """controllers.LoginController.loginSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.LoginController.logout"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addProject""", """controllers.HomeController.addProject"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addProjectSubmit""", """controllers.HomeController.addProjectSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """delProject/""" + "$" + """id<[^/]+>""", """controllers.HomeController.deleteProject(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateProject/""" + "$" + """id<[^/]+>""", """controllers.HomeController.updateProject(id:Long)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """Manager""", """controllers.HomeController.usersManager"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """Employee""", """controllers.HomeController.usersEmployee"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
@@ -117,7 +116,7 @@ class Routes(
   )
 
   // @LINE:11
-  private[this] lazy val controllers_LoginController_loginSubmit3_route = Route("POST",
+  private[this] lazy val controllers_LoginController_loginSubmit3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("loginSubmit")))
   )
   private[this] lazy val controllers_LoginController_loginSubmit3_invoker = createInvoker(
@@ -127,7 +126,7 @@ class Routes(
       "controllers.LoginController",
       "loginSubmit",
       Nil,
-      "POST",
+      "GET",
       this.prefix + """loginSubmit""",
       """""",
       Seq()
@@ -225,28 +224,10 @@ class Routes(
   )
 
   // @LINE:22
-  private[this] lazy val controllers_HomeController_usersManager9_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Manager")))
-  )
-  private[this] lazy val controllers_HomeController_usersManager9_invoker = createInvoker(
-    HomeController_0.usersManager,
-    play.api.routing.HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.HomeController",
-      "usersManager",
-      Nil,
-      "GET",
-      this.prefix + """Manager""",
-      """""",
-      Seq()
-    )
-  )
-
-  // @LINE:24
-  private[this] lazy val controllers_HomeController_usersEmployee10_route = Route("GET",
+  private[this] lazy val controllers_HomeController_usersEmployee9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Employee")))
   )
-  private[this] lazy val controllers_HomeController_usersEmployee10_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_usersEmployee9_invoker = createInvoker(
     HomeController_0.usersEmployee,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -260,11 +241,11 @@ class Routes(
     )
   )
 
-  // @LINE:28
-  private[this] lazy val controllers_Assets_versioned11_route = Route("GET",
+  // @LINE:26
+  private[this] lazy val controllers_Assets_versioned10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned11_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned10_invoker = createInvoker(
     Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -336,21 +317,15 @@ class Routes(
       }
   
     // @LINE:22
-    case controllers_HomeController_usersManager9_route(params@_) =>
+    case controllers_HomeController_usersEmployee9_route(params@_) =>
       call { 
-        controllers_HomeController_usersManager9_invoker.call(HomeController_0.usersManager)
+        controllers_HomeController_usersEmployee9_invoker.call(HomeController_0.usersEmployee)
       }
   
-    // @LINE:24
-    case controllers_HomeController_usersEmployee10_route(params@_) =>
-      call { 
-        controllers_HomeController_usersEmployee10_invoker.call(HomeController_0.usersEmployee)
-      }
-  
-    // @LINE:28
-    case controllers_Assets_versioned11_route(params@_) =>
+    // @LINE:26
+    case controllers_Assets_versioned10_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned11_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned10_invoker.call(Assets_1.versioned(path, file))
       }
   }
 }

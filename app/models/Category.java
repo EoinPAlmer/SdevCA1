@@ -55,7 +55,7 @@ public class Category extends Model {
     public static Finder<Long,Category> find = new Finder<Long,Category>(Category.class);
 
     public static List<Category> findAll(){
-        return Category.find.where().orderBy("name asc").findList();
+        return Category.find.query().where().orderBy("name asc").findList();
     }
 
     public static Map<String,String>options(){

@@ -788,3 +788,6 @@ org.h2.message.DbException: The connection was not closed by the application and
 Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-192]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
 	... 14 more
+2019-03-18 15:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CATAGORY" not found; SQL statement:
+insert into catagory(id,name) values(4, "App Engineer") [42102-197]

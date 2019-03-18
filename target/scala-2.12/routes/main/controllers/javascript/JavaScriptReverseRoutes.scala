@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/SdevCA1/conf/routes
-// @DATE:Sun Mar 17 13:56:57 GMT 2019
+// @DATE:Mon Mar 18 16:51:05 GMT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -20,16 +20,6 @@ package controllers.javascript {
 
   
     // @LINE:22
-    def usersManager: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.usersManager",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "Manager"})
-        }
-      """
-    )
-  
-    // @LINE:24
     def usersEmployee: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.usersEmployee",
       """
@@ -114,7 +104,7 @@ package controllers.javascript {
       "controllers.LoginController.loginSubmit",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "loginSubmit"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "loginSubmit"})
         }
       """
     )
@@ -141,7 +131,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:28
+  // @LINE:26
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -149,7 +139,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:28
+    // @LINE:26
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

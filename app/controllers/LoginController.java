@@ -1,30 +1,35 @@
 package controllers;
 
-import play.api.Environment;
 import play.mvc.*;
+
+import views.html.*;
+
+import play.api.Environment;
 import play.data.*;
 import play.db.ebean.Transactional;
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
-import views.html.*;
+
 import models.*;
+import models.users.*;
 
 public class LoginController extends Controller {
 
     private FormFactory formFactory;
 
-    private Environment env;
+    /*private Environment env;*/
 
     @Inject
-    public LoginController(Environment e, FormFactory f) {
-        this.env = e;
+    public LoginController(/*Environment e, */FormFactory f) {
+        /*this.env = e;*/
         this.formFactory = f;
     }
 
     public Result login(){
         Form<Login> loginForm = formFactory.form(Login.class);
-        return ok(login.render(loginForm, User.getUserById(session().get("email"))));
+        return ok(login.render(loginForm,User.getUserById(session().get("email"))));
     }
 
     public Result loginSubmit(){
